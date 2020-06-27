@@ -1,0 +1,32 @@
+{
+  "defaultShoeId": {
+    "id": "1",
+    "name": "Default Shoe",
+    "price": "25",
+    "size": "6",
+    "color": "Blue",
+    "type": "High Top",
+    "washType": "Machine Washable",
+    "fit": "Wide",
+    "archType": "High Arch",
+    "medicalRequirements": {
+      "highInstep": "Yes",
+      "plantarFascitis": "Yes"
+    }
+  },
+  "secondDefaultShoeId": {
+    "id": "2",
+    "name": "Default Shoe 2",
+    "price": "50",
+    "size": "5",
+    "color": "Reds",
+    "type": "High Top",
+    "washType": "Machine Washable",
+    "fit": "Narrow",
+    "archType": "High Arch",
+    "medicalRequirements": {
+      "highInstep": "No",
+      "plantarFascitis": "Yes"
+    }
+  }
+}

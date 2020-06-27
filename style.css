@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   margin-top: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
 }
 
 #body-text p {
@@ -24,47 +24,116 @@
   grid-template-columns: auto auto auto;
 }
 
+/** Wrapper Code **/
 .wrapper {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
   color: var(--white);
   font-style: italic;
   text-align: center;
   height: 181px;
   width: 181px;
   opacity: 85%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.child {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  transition-duration: 0.5s;
 }
 
 .wrapper p {
-  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
   font-size: 20px;
   font-style: italic;
+  z-index: 1;
+}
+
+.wrapper::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition-duration: 0.5s;
+}
+
+.wrapper:hover .child {
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+}
+
+.wrapper:hover::before {
+  background-color: rgba(0, 0, 0, 0.8);
+  transition-duration: 0.5s;
 }
 
 #box1 {
-  background-image: url("//cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_180x.jpg?v=1553729579 180w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_360x.jpg?v=1553729579 360w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_540x.jpg?v=1553729579 540w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_720x.jpg?v=1553729579 720w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_900x.jpg?v=1553729579 900w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_1080x.jpg?v=1553729579 1080w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_1296x.jpg?v=1553729579 1296w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_1512x.jpg?v=1553729579 1512w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_1728x.jpg?v=1553729579 1728w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_1944x.jpg?v=1553729579 1944w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_2160x.jpg?v=1553729579 2160w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_2376x.jpg?v=1553729579 2376w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_2592x.jpg?v=1553729579 2592w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_2808x.jpg?v=1553729579 2808w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_3024x.jpg?v=1553729579 3024w");
+  background-image: url('//cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_180x.jpg?v=1553729579 180w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_360x.jpg?v=1553729579 360w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_540x.jpg?v=1553729579 540w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_720x.jpg?v=1553729579 720w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_900x.jpg?v=1553729579 900w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_1080x.jpg?v=1553729579 1080w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_1296x.jpg?v=1553729579 1296w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_1512x.jpg?v=1553729579 1512w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_1728x.jpg?v=1553729579 1728w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_1944x.jpg?v=1553729579 1944w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_2160x.jpg?v=1553729579 2160w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_2376x.jpg?v=1553729579 2376w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_2592x.jpg?v=1553729579 2592w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_2808x.jpg?v=1553729579 2808w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_3024x.jpg?v=1553729579 3024w');
 }
 
 #box2 {
-  background-image: url("//cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnailswedges5_180x.jpg?v=1554230991 180w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnailswedges5_360x.jpg?v=1554230991 360w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnailswedges5_540x.jpg?v=1554230991 540w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnailswedges5_720x.jpg?v=1554230991 720w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnailswedges5_900x.jpg?v=1554230991 900w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnailswedges5_1080x.jpg?v=1554230991 1080w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnailswedges5_1296x.jpg?v=1554230991 1296w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnailswedges5_1512x.jpg?v=1554230991 1512w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnailswedges5_1728x.jpg?v=1554230991 1728w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnailswedges5_1944x.jpg?v=1554230991 1944w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnailswedges5_2160x.jpg?v=1554230991 2160w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnailswedges5_2376x.jpg?v=1554230991 2376w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnailswedges5_2592x.jpg?v=1554230991 2592w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnailswedges5_2808x.jpg?v=1554230991 2808w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnailswedges5_3024x.jpg?v=1554230991 3024w");
+  background-image: url('//cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnailswedges5_180x.jpg?v=1554230991 180w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnailswedges5_360x.jpg?v=1554230991 360w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnailswedges5_540x.jpg?v=1554230991 540w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnailswedges5_720x.jpg?v=1554230991 720w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnailswedges5_900x.jpg?v=1554230991 900w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnailswedges5_1080x.jpg?v=1554230991 1080w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnailswedges5_1296x.jpg?v=1554230991 1296w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnailswedges5_1512x.jpg?v=1554230991 1512w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnailswedges5_1728x.jpg?v=1554230991 1728w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnailswedges5_1944x.jpg?v=1554230991 1944w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnailswedges5_2160x.jpg?v=1554230991 2160w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnailswedges5_2376x.jpg?v=1554230991 2376w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnailswedges5_2592x.jpg?v=1554230991 2592w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnailswedges5_2808x.jpg?v=1554230991 2808w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnailswedges5_3024x.jpg?v=1554230991 3024w');
 }
 
 #box3 {
-  background-image: url("//cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-heels3_180x.jpg?v=1553729596 180w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-heels3_360x.jpg?v=1553729596 360w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-heels3_540x.jpg?v=1553729596 540w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-heels3_720x.jpg?v=1553729596 720w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-heels3_900x.jpg?v=1553729596 900w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-heels3_1080x.jpg?v=1553729596 1080w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-heels3_1296x.jpg?v=1553729596 1296w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-heels3_1512x.jpg?v=1553729596 1512w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-heels3_1728x.jpg?v=1553729596 1728w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-heels3_1944x.jpg?v=1553729596 1944w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-heels3_2160x.jpg?v=1553729596 2160w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-heels3_2376x.jpg?v=1553729596 2376w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-heels3_2592x.jpg?v=1553729596 2592w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-heels3_2808x.jpg?v=1553729596 2808w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-heels3_3024x.jpg?v=1553729596 3024w");
+  background-image: url('//cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-heels3_180x.jpg?v=1553729596 180w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-heels3_360x.jpg?v=1553729596 360w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-heels3_540x.jpg?v=1553729596 540w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-heels3_720x.jpg?v=1553729596 720w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-heels3_900x.jpg?v=1553729596 900w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-heels3_1080x.jpg?v=1553729596 1080w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-heels3_1296x.jpg?v=1553729596 1296w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-heels3_1512x.jpg?v=1553729596 1512w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-heels3_1728x.jpg?v=1553729596 1728w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-heels3_1944x.jpg?v=1553729596 1944w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-heels3_2160x.jpg?v=1553729596 2160w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-heels3_2376x.jpg?v=1553729596 2376w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-heels3_2592x.jpg?v=1553729596 2592w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-heels3_2808x.jpg?v=1553729596 2808w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-heels3_3024x.jpg?v=1553729596 3024w');
 }
 
 #box4 {
-  background-image: url("//cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-closed2_180x.jpg?v=1553729558 180w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-closed2_360x.jpg?v=1553729558 360w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-closed2_540x.jpg?v=1553729558 540w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-closed2_720x.jpg?v=1553729558 720w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-closed2_900x.jpg?v=1553729558 900w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-closed2_1080x.jpg?v=1553729558 1080w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-closed2_1296x.jpg?v=1553729558 1296w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-closed2_1512x.jpg?v=1553729558 1512w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-closed2_1728x.jpg?v=1553729558 1728w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-closed2_1944x.jpg?v=1553729558 1944w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-closed2_2160x.jpg?v=1553729558 2160w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-closed2_2376x.jpg?v=1553729558 2376w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-closed2_2592x.jpg?v=1553729558 2592w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-closed2_2808x.jpg?v=1553729558 2808w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-closed2_3024x.jpg?v=1553729558 3024w");
+  background-image: url('//cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-closed2_180x.jpg?v=1553729558 180w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-closed2_360x.jpg?v=1553729558 360w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-closed2_540x.jpg?v=1553729558 540w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-closed2_720x.jpg?v=1553729558 720w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-closed2_900x.jpg?v=1553729558 900w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-closed2_1080x.jpg?v=1553729558 1080w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-closed2_1296x.jpg?v=1553729558 1296w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-closed2_1512x.jpg?v=1553729558 1512w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-closed2_1728x.jpg?v=1553729558 1728w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-closed2_1944x.jpg?v=1553729558 1944w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-closed2_2160x.jpg?v=1553729558 2160w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-closed2_2376x.jpg?v=1553729558 2376w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-closed2_2592x.jpg?v=1553729558 2592w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-closed2_2808x.jpg?v=1553729558 2808w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-closed2_3024x.jpg?v=1553729558 3024w');
 }
 
 #box5 {
-  background-image: url("//cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_180x.jpg?v=1553729568 180w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_360x.jpg?v=1553729568 360w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_540x.jpg?v=1553729568 540w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_720x.jpg?v=1553729568 720w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_900x.jpg?v=1553729568 900w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_1080x.jpg?v=1553729568 1080w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_1296x.jpg?v=1553729568 1296w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_1512x.jpg?v=1553729568 1512w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_1728x.jpg?v=1553729568 1728w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_1944x.jpg?v=1553729568 1944w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_2160x.jpg?v=1553729568 2160w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_2376x.jpg?v=1553729568 2376w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_2592x.jpg?v=1553729568 2592w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_2808x.jpg?v=1553729568 2808w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_3024x.jpg?v=1553729568 3024w");
+  background-image: url('//cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_180x.jpg?v=1553729568 180w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_360x.jpg?v=1553729568 360w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_540x.jpg?v=1553729568 540w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_720x.jpg?v=1553729568 720w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_900x.jpg?v=1553729568 900w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_1080x.jpg?v=1553729568 1080w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_1296x.jpg?v=1553729568 1296w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_1512x.jpg?v=1553729568 1512w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_1728x.jpg?v=1553729568 1728w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_1944x.jpg?v=1553729568 1944w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_2160x.jpg?v=1553729568 2160w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_2376x.jpg?v=1553729568 2376w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_2592x.jpg?v=1553729568 2592w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_2808x.jpg?v=1553729568 2808w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_3024x.jpg?v=1553729568 3024w');
 }
 
 #box6 {
-  background-image: url("//cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_180x.jpg?v=1553729568 180w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_360x.jpg?v=1553729568 360w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_540x.jpg?v=1553729568 540w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_720x.jpg?v=1553729568 720w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_900x.jpg?v=1553729568 900w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_1080x.jpg?v=1553729568 1080w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_1296x.jpg?v=1553729568 1296w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_1512x.jpg?v=1553729568 1512w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_1728x.jpg?v=1553729568 1728w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_1944x.jpg?v=1553729568 1944w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_2160x.jpg?v=1553729568 2160w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_2376x.jpg?v=1553729568 2376w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_2592x.jpg?v=1553729568 2592w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_2808x.jpg?v=1553729568 2808w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_3024x.jpg?v=1553729568 3024w");
+  background-image: url('//cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_180x.jpg?v=1553729568 180w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_360x.jpg?v=1553729568 360w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_540x.jpg?v=1553729568 540w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_720x.jpg?v=1553729568 720w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_900x.jpg?v=1553729568 900w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_1080x.jpg?v=1553729568 1080w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_1296x.jpg?v=1553729568 1296w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_1512x.jpg?v=1553729568 1512w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_1728x.jpg?v=1553729568 1728w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_1944x.jpg?v=1553729568 1944w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_2160x.jpg?v=1553729568 2160w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_2376x.jpg?v=1553729568 2376w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_2592x.jpg?v=1553729568 2592w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_2808x.jpg?v=1553729568 2808w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-boots4_3024x.jpg?v=1553729568 3024w');
 }
+
+/** End Wrapper Code **/
+
+/** By Style Page **/
+
+#by-style-page {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#by-style-page .container {
+  display: flex;
+  flex-direction: column;
+}
+
+/** End By Style Page **/
+
+/** By Color Page **/
+
+#by-color-page {
+}
+
+/** End By Color Page **/
+
+/** By Style Page **/
+
+#by-special-requirements-page {
+}
+
+/** End By Style Page **/
 
 .footer {
   display: flex;
@@ -74,7 +143,7 @@
   padding: 0;
   height: 20vh;
   background-color: var(--green);
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   align-items: center;
   justify-content: center;
 }
