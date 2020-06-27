@@ -1,17 +1,31 @@
 {
-  "defaultShoeId": {
+  "Sandal-1": {
     "id": "1",
-    "name": "Default Shoe",
-    "price": "25",
-    "size": "6",
-    "color": "Blue",
-    "type": "High Top",
+    "name": "Atlantic",
+    "price": "120",
+    "color": {
+      "white": "Yes",
+      "coral": "Yes",
+      "black": "Yes",
+      "tobacco": "Yes",
+      "red": "Yes",
+      "navy": "Yes",
+      "denim": "Yes",
+      "black-linen": "Yes",
+      "linen": "Yes",
+      "red-linen": "Yes",
+      "navy-linen": "Yes",
+      "gold-woven": "Yes",
+      "silver-woven": "Yes"
+    },
+    "type": "Sandal",
     "washType": "Machine Washable",
-    "fit": "Wide",
-    "archType": "High Arch",
+    "fit": "Runs big",
+    "archType": "Low Arch",
     "medicalRequirements": {
-      "highInstep": "Yes",
-      "plantarFascitis": "Yes"
+      "highInstep-friendly": "Yes",
+      "plantarFascitis-friendly": "Yes",
+      "bunion-friendly": "Yes"
     }
   },
   "secondDefaultShoeId": {
