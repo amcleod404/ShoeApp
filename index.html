@@ -25,6 +25,15 @@
     <title>In-Store Guide</title>
   </head>
   <body>
+    <div id="button">
+      <button
+        type="button"
+        class="btn btn-outline-primary"
+        onclick="history.go(-1)"
+      >
+        &larr;
+      </button>
+    </div>
     <div class="container" id="header">
       <img
         src="//cdn.shopify.com/s/files/1/0095/1340/2427/files/desktop-logo2_97afb2c6-4f3f-40a2-ac5d-6bcc06dbe5c0_400x.png?v=1560278115"
@@ -38,11 +47,16 @@
 
     <div class="container" id="by-style-page" style="display: none;">
       <h1>By Style</h1>
-      <div class="container"></div>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3"></div>
+      </div>
     </div>
 
     <div class="container" id="by-color-page" style="display: none;">
       <h1>By Color</h1>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3"></div>
+      </div>
     </div>
 
     <div
@@ -51,18 +65,30 @@
       style="display: none;"
     >
       <h1>By Special Requirements</h1>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3"></div>
+      </div>
     </div>
 
     <div class="container" id="by-price-page" style="display: none;">
       <h1>By Price</h1>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-4"></div>
+      </div>
     </div>
 
     <div class="container" id="by-fit-page" style="display: none;">
       <h1>By Fit</h1>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3"></div>
+      </div>
     </div>
 
     <div class="container" id="by-arch-type-page" style="display: none;">
       <h1>By Arch-Type</h1>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2"></div>
+      </div>
     </div>
 
     <div class="container" id="media-grid">

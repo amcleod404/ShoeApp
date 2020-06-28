@@ -5,6 +5,22 @@
   --black: #000000;
 }
 
+#button button {
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 5px 20px;
+  color: var(--green);
+  border-color: var(--green);
+  position: fixed;
+  top: 0;
+}
+
+#button button:hover {
+  color: var(--white);
+  background-color: var(--green);
+  border-color: var(--green);
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -12,11 +28,13 @@
   font-family: "Playfair Display", serif;
 }
 
+.container h1 {
+  font-size: 24px;
+  font-style: italic;
+}
+
 #body-text p {
   font-style: italic;
-  margin-top: 10px;
-  margin-bottom: 0px;
-  font-size: 18px;
 }
 
 #media-grid {
@@ -127,16 +145,81 @@
 /** By Color Page **/
 
 #by-color-page {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#by-color-page .container {
+  display: flex;
+  flex-direction: column;
 }
 
 /** End By Color Page **/
 
 /** By Style Page **/
 
+.style-tile {
+  cursor: pointer;
+}
+
 #by-special-requirements-page {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#by-special-requirements-page .container {
+  display: flex;
+  flex-direction: column;
 }
 
 /** End By Style Page **/
+
+/** By Price Page **/
+
+#by-price-page {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#by-price-page .container {
+  display: flex;
+  flex-direction: column;
+}
+
+/** End By Price Page **/
+
+/** By fit Page **/
+
+#by-fit-page {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#by-fit-page .container {
+  display: flex;
+  flex-direction: column;
+}
+
+/** End By fit Page **/
+
+/** By arch-type Page **/
+
+#by-arch-type-page {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#by-arch-type-page .container {
+  display: flex;
+  flex-direction: column;
+}
+
+/** End By arch-type Page **/
 
 .footer {
   display: flex;
@@ -144,6 +227,7 @@
   width: 100%;
   margin-top: 100px;
   padding: 0;
+  bottom: 0;
   height: 20vh;
   background-color: var(--green);
   font-family: "Playfair Display", serif;

@@ -20,27 +20,43 @@
     },
     "type": "Sandal",
     "washType": "Machine Washable",
-    "fit": "Runs big",
+    "size": "Size up",
+    "fit": "Narrow",
     "archType": "Low Arch",
     "medicalRequirements": {
       "highInstep-friendly": "Yes",
       "plantarFascitis-friendly": "Yes",
       "bunion-friendly": "Yes"
-    }
+    },
+    "image": "./images/atlantic.jpg"
   },
-  "secondDefaultShoeId": {
+  "Sandal-2": {
     "id": "2",
-    "name": "Default Shoe 2",
-    "price": "50",
-    "size": "5",
-    "color": "Reds",
-    "type": "High Top",
+    "name": "Gaillard",
+    "price": "135",
+    "color": {
+      "white": "Yes",
+      "coral": "Yes",
+      "black": "Yes",
+      "tobacco": "Yes",
+      "red": "Yes",
+      "navy": "Yes",
+      "denim": "Yes",
+      "black-linen": "Yes",
+      "linen": "Yes",
+      "red-linen": "Yes",
+      "navy-linen": "Yes",
+      "gold-woven": "Yes",
+      "silver-woven": "Yes"
+    },
+    "type": "Sandal",
     "washType": "Machine Washable",
-    "fit": "Narrow",
-    "archType": "High Arch",
+    "size": "Size up",
+    "fit": "Wide",
+    "archType": "Low Arch",
     "medicalRequirements": {
-      "highInstep": "No",
-      "plantarFascitis": "Yes"
-    }
+      "highInstep-friendly": "Yes"
+    },
+    "image": "./images/gaillard.jpg"
   }
 }
