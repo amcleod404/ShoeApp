@@ -101,6 +101,11 @@
   transition-duration: 0.5s;
 }
 
+.description p {
+  font-size: 10px;
+  margin-top: 50px;
+}
+
 #box1 {
   background-image: url("//cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_180x.jpg?v=1553729579 180w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_360x.jpg?v=1553729579 360w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_540x.jpg?v=1553729579 540w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_720x.jpg?v=1553729579 720w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_900x.jpg?v=1553729579 900w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_1080x.jpg?v=1553729579 1080w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_1296x.jpg?v=1553729579 1296w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_1512x.jpg?v=1553729579 1512w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_1728x.jpg?v=1553729579 1728w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_1944x.jpg?v=1553729579 1944w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_2160x.jpg?v=1553729579 2160w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_2376x.jpg?v=1553729579 2376w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_2592x.jpg?v=1553729579 2592w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_2808x.jpg?v=1553729579 2808w, //cdn.shopify.com/s/files/1/0095/1340/2427/files/thumbnails-sandals2_3024x.jpg?v=1553729579 3024w");
 }

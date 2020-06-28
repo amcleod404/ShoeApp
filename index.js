@@ -1,4 +1,5 @@
 // UI Elements
+const html = document.querySelector("#landing");
 const backButton = document.querySelector("#button");
 const container = document.querySelector("#media-grid");
 const selectAFolder = document.querySelector("#body-text");
@@ -16,7 +17,7 @@ container.addEventListener("click", (e) => {
   if (e.target.id !== "media-grid") {
     if (e.target.id === "by-style") {
       byStylePage.style.display = "flex";
-      loadStylePage(byStylePage);
+      loadStylePage(byStylePage, container);
     } else if (e.target.id === "by-color") {
       byColorPage.style.display = "flex";
       loadColorPage(byColorPage);
@@ -39,7 +40,7 @@ container.addEventListener("click", (e) => {
 });
 
 // Functions
-const loadStylePage = (page) => {
+const loadStylePage = (page, home) => {
   page.children[1].children[0].innerHTML += `
     <div class="col mb-4 style-tile" onclick="loadStyledShoes('Sandal')">
       <div class="card h-100">
