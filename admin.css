@@ -1,0 +1,110 @@
+:root {
+  --green: #6eceb2;
+  --grey: #333;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+/* Main Container */
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 100px;
+}
+
+.container p {
+  font-style: italic;
+  font-size: 18px;
+}
+
+/* Form */
+
+.form {
+  margin: 0px 50px;
+}
+
+.colorGrid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto;
+  margin-bottom: 16px;
+}
+
+.form-check {
+  margin-bottom: 5px;
+}
+
+#check-label {
+  margin-bottom: 8px;
+}
+
+#no-label {
+  margin-bottom: 16px;
+}
+
+.sizeGrid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+}
+
+/* Buttons */
+
+#button button {
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 5px 20px;
+  color: var(--green);
+  border-color: var(--green);
+}
+
+#button button:hover {
+  color: var(--white);
+  background-color: var(--green);
+  border-color: var(--green);
+}
+
+.btn-primary {
+  background-color: var(--green);
+  color: white;
+  border-color: var(--green);
+}
+
+.btn-primary:hover {
+  background-color: var(--grey);
+  color: var(--green);
+  border-color: var(--grey);
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 100px;
+  padding: 0;
+  bottom: 0;
+  height: 20vh;
+  background-color: var(--green);
+  font-family: "Playfair Display", serif;
+  align-items: center;
+  justify-content: center;
+}
+
+#footerimg {
+  margin-top: 15px;
+  height: 50%;
+}
+
+#footerimg img {
+  height: 100%;
+}
+
+#footertext {
+  height: 50%;
+  margin-top: 10px;
+}

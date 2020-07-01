@@ -25,12 +25,17 @@
     <title>In-Store Guide</title>
   </head>
   <body>
-    <div id="button">
+    <div id="adminButton">
       <button
         type="button"
         class="btn btn-outline-primary"
-        onclick="history.go(-1)"
+        onclick="window.location.href= 'admin.html'"
       >
+        admin
+      </button>
+    </div>
+    <div id="button">
+      <button type="button" class="btn btn-outline-primary" onclick="goBack()">
         &larr;
       </button>
     </div>
@@ -94,9 +99,9 @@
     <div class="container" id="media-grid">
       <div class="wrapper">
         <div class="child" id="box1"></div>
-        <p id="by-style">By Style</p>
+        <p>By Style</p>
         <div class="description">
-          <p>
+          <p id="by-style">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione,
             debitis.
           </p>
@@ -104,9 +109,9 @@
       </div>
       <div class="wrapper">
         <div class="child" id="box2"></div>
-        <p id="by-color">By Color</p>
+        <p>By Color</p>
         <div class="description">
-          <p>
+          <p id="by-color">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione,
             debitis.
           </p>
@@ -115,9 +120,9 @@
 
       <div class="wrapper">
         <div class="child" id="box3"></div>
-        <p id="by-special-requirements">By Accessibility</p>
+        <p>By Accessibility</p>
         <div class="description">
-          <p>
+          <p id="by-special-requirements">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione,
             debitis.
           </p>
@@ -125,9 +130,9 @@
       </div>
       <div class="wrapper">
         <div class="child" id="box4"></div>
-        <p id="by-price">By Price</p>
+        <p>By Price</p>
         <div class="description">
-          <p>
+          <p id="by-price">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione,
             debitis.
           </p>
@@ -135,9 +140,9 @@
       </div>
       <div class="wrapper">
         <div class="child" id="box5"></div>
-        <p id="by-fit">By Fit</p>
+        <p>By Fit</p>
         <div class="description">
-          <p>
+          <p id="by-fit">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione,
             debitis.
           </p>
@@ -145,9 +150,9 @@
       </div>
       <div class="wrapper">
         <div class="child" id="box6"></div>
-        <p id="by-arch-type">By Arch-Type</p>
+        <p>By Arch-Type</p>
         <div class="description">
-          <p>
+          <p id="by-arch-type">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione,
             debitis.
           </p>

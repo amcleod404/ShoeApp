@@ -5,6 +5,27 @@
   --black: #000000;
 }
 
+#button {
+  display: none;
+}
+
+#adminButton {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 10px;
+}
+
+#adminButton button {
+  color: var(--green);
+  border-color: var(--green);
+}
+
+#adminButton button:hover {
+  color: var(--white);
+  background-color: var(--green);
+  border-color: var(--green);
+}
+
 #button button {
   margin-top: 10px;
   margin-left: 10px;

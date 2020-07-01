@@ -58,5 +58,67 @@
       "highInstep-friendly": "Yes"
     },
     "image": "./images/gaillard.jpg"
+  },
+  "Sandal-3": {
+    "id": "3",
+    "name": "Balboa",
+    "price": "150",
+    "color": {
+      "white": "Yes",
+      "coral": "Yes",
+      "black": "Yes",
+      "tobacco": "Yes",
+      "red": "Yes",
+      "navy": "Yes",
+      "denim": "Yes",
+      "black-linen": "Yes",
+      "linen": "Yes",
+      "red-linen": "Yes",
+      "navy-linen": "Yes",
+      "gold-woven": "Yes",
+      "silver-woven": "Yes"
+    },
+    "type": "Sandal",
+    "washType": "Machine Washable",
+    "size": "Size up",
+    "fit": "Wide",
+    "archType": "Neither",
+    "medicalRequirements": {
+      "highInstep-friendly": "Yes",
+      "plantarFascitis-friendly": "Yes",
+      "bunion-friendly": "Yes"
+    },
+    "image": "./images/balboa.jpg"
+  },
+  "Sandal-4": {
+    "id": "4",
+    "name": "Backless Cannon",
+    "price": "135",
+    "color": {
+      "white": "Yes",
+      "coral": "Yes",
+      "black": "Yes",
+      "tobacco": "Yes",
+      "red": "Yes",
+      "navy": "Yes",
+      "denim": "Yes",
+      "black-linen": "Yes",
+      "linen": "Yes",
+      "red-linen": "Yes",
+      "navy-linen": "Yes",
+      "gold-woven": "Yes",
+      "silver-woven": "Yes"
+    },
+    "type": "Sandal",
+    "washType": "Machine Washable",
+    "size": "Size up",
+    "fit": "Narrow",
+    "archType": "Low Arch",
+    "medicalRequirements": {
+      "highInstep-friendly": "Yes",
+      "plantarFascitis-friendly": "Yes",
+      "bunion-friendly": "Yes"
+    },
+    "image": "./images/backlesscannon.jpg"
   }
 }

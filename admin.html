@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="admin.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Admin Login</title>
+  </head>
+  <body>
+    <div id="button">
+        <button type="button" class="btn btn-outline-primary" onclick="window.location.href = 'index.html'">
+          &larr;
+        </button>
+      </div>
+    <div class="container" id="header">
+      <img
+        src="//cdn.shopify.com/s/files/1/0095/1340/2427/files/desktop-logo2_97afb2c6-4f3f-40a2-ac5d-6bcc06dbe5c0_400x.png?v=1560278115"
+        itemprop="logo"
+      />
+    </div>
+    <div class="form">
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Admin Username</label>
+          <input
+            type="username"
+            class="form-control"
+            id="username"
+            aria-describedby="emailHelp"
+            placeholder="Enter username"
+          />
+          <small id="emailHelp" class="form-text text-muted"
+            >Employees Only</small
+          >
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="Password"
+          />
+        </div>
+
+        <button type="button" class="btn btn-primary" id ="submit" onclick = "verification(document.getElementById('username').value, document.getElementById('password').value)">Submit</button>
+      </form>
+    </div>
+
+    <div class="footer">
+        <div id="footerimg">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0095/1340/2427/files/footer-logo.png?13347206295676184098"
+          />
+        </div>
+        <div id="footertext">
+          <p>COPYRIGHT &copy; 2020 CHARLESTON SHOE COMPANY</p>
+      </div>
+
+    <script src="admin.js"></script>
+  </body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="admin.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Manage Inventory</title>
+  </head>
+  <body>
+    <div id="button">
+      <button
+        type="button"
+        class="btn btn-outline-primary"
+        onclick="window.location.href = 'index.html'"
+      >
+        home
+      </button>
+    </div>
+    <div class="container" id="header">
+      <img
+        src="//cdn.shopify.com/s/files/1/0095/1340/2427/files/desktop-logo2_97afb2c6-4f3f-40a2-ac5d-6bcc06dbe5c0_400x.png?v=1560278115"
+        itemprop="logo"
+      />
+    </div>
+    <div class="container">
+      <p>Manage Inventory</p>
+    </div>
+    <div class="form">
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Name of Shoe</label>
+          <input
+            type="name"
+            class="form-control"
+            id="name"
+            aria-describedby="emailHelp"
+            placeholder="Atlantic"
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Price</label>
+          <input
+            type="number"
+            class="form-control"
+            id="price"
+            aria-describedby="emailHelp"
+            placeholder="125"
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Type of Shoe</label>
+          <input
+            type="name"
+            class="form-control"
+            id="type"
+            aria-describedby="emailHelp"
+            placeholder="Sandal"
+          />
+        </div>
+
+        <!-- COLORS -->
+        <div class="form-group" id="check-label">
+          <label for="Color">Colors</label>
+        </div>
+
+        <div class="colorGrid">
+          <div class="form-check">
+            <div class="colorOption">
+              <input type="checkbox" class="form-check-input" id="black" />
+              <label class="form-check-label" for="exampleCheck1">Black</label>
+            </div>
+          </div>
+          <div class="form-check">
+            <div class="colorOption">
+              <input type="checkbox" class="form-check-input" id="white" />
+              <label class="form-check-label" for="exampleCheck1">White</label>
+            </div>
+          </div>
+          <div class="form-check">
+            <div class="colorOption">
+              <input type="checkbox" class="form-check-input" id="coral" />
+              <label class="form-check-label" for="exampleCheck1">Coral</label>
+            </div>
+          </div>
+          <div class="form-check">
+            <div class="colorOption">
+              <input type="checkbox" class="form-check-input" id="tobacco" />
+              <label class="form-check-label" for="exampleCheck1"
+                >Tobacco</label
+              >
+            </div>
+          </div>
+          <div class="form-check">
+            <div class="colorOption">
+              <input type="checkbox" class="form-check-input" id="red" />
+              <label class="form-check-label" for="exampleCheck1">Red</label>
+            </div>
+          </div>
+          <div class="form-check">
+            <div class="colorOption">
+              <input type="checkbox" class="form-check-input" id="navy" />
+              <label class="form-check-label" for="exampleCheck1">Navy</label>
+            </div>
+          </div>
+          <div class="form-check">
+            <div class="colorOption">
+              <input type="checkbox" class="form-check-input" id="denim" />
+              <label class="form-check-label" for="exampleCheck1">Denim</label>
+            </div>
+          </div>
+          <div class="form-check">
+            <div class="colorOption">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="black-linen"
+              />
+              <label class="form-check-label" for="exampleCheck1"
+                >Black Linen</label
+              >
+            </div>
+          </div>
+          <div class="form-check">
+            <div class="colorOption">
+              <input type="checkbox" class="form-check-input" id="linen" />
+              <label class="form-check-label" for="exampleCheck1">Linen</label>
+            </div>
+          </div>
+          <div class="form-check">
+            <div class="colorOption">
+              <input type="checkbox" class="form-check-input" id="red-linen" />
+              <label class="form-check-label" for="exampleCheck1"
+                >Red Linen</label
+              >
+            </div>
+          </div>
+          <div class="form-check">
+            <div class="colorOption">
+              <input type="checkbox" class="form-check-input" id="navy-linen" />
+              <label class="form-check-label" for="exampleCheck1"
+                >Navy Linen</label
+              >
+            </div>
+          </div>
+          <div class="form-check">
+            <div class="colorOption">
+              <input type="checkbox" class="form-check-input" id="gold-woven" />
+              <label class="form-check-label" for="exampleCheck1"
+                >Gold Woven</label
+              >
+            </div>
+          </div>
+          <div class="form-check">
+            <div class="colorOption">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="silver-woven"
+              />
+              <label class="form-check-label" for="exampleCheck1"
+                >Silver Woven</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- MACHINE WASH -->
+
+        <div class="form-group" id="check-label">
+          <label for="machine-wash">Machine Wash</label>
+        </div>
+
+        <div class="form-check">
+          <div class="machineWash">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="machine-wash-yes"
+            />
+            <label class="form-check-label" for="exampleCheck1">Yes</label>
+          </div>
+        </div>
+
+        <div class="form-check">
+          <div class="machineWash">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="machine-wash-no"
+            />
+            <label class="form-check-label" for="exampleCheck1" id="no-label"
+              >No</label
+            >
+          </div>
+        </div>
+
+        <!-- SIZE -->
+
+        <div class="form-group" id="check-label">
+          <label for="size">Size</label>
+        </div>
+
+        <div class="sizeGrid">
+          <div class="form-check">
+            <div class="size">
+              <input type="checkbox" class="form-check-input" id="size-up" />
+              <label class="form-check-label" for="exampleCheck1" id="size-up"
+                >Size-Up</label
+              >
+            </div>
+          </div>
+
+          <div class="form-check">
+            <div class="size">
+              <input type="checkbox" class="form-check-input" id="size-down" />
+              <label class="form-check-label" for="exampleCheck1" id="size-down"
+                >Size-Down</label
+              >
+            </div>
+          </div>
+
+          <div class="form-check">
+            <div class="size">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="size-neither"
+              />
+              <label
+                class="form-check-label"
+                for="exampleCheck1"
+                id="size-neither"
+                >Neither</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <div class="footer">
+      <div id="footerimg">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0095/1340/2427/files/footer-logo.png?13347206295676184098"
+        />
+      </div>
+      <div id="footertext">
+        <p>COPYRIGHT &copy; 2020 CHARLESTON SHOE COMPANY</p>
+      </div>
+    </div>
+  </body>
+</html>
