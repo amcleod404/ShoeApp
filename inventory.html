@@ -41,10 +41,10 @@
       />
     </div>
     <div class="container">
-      <p>Manage Inventory</p>
+      <p>Add to Inventory</p>
     </div>
     <div class="form">
-      <form>
+      <form id="inventory">
         <div class="form-group">
           <label for="exampleInputEmail1">Name of Shoe</label>
           <input
@@ -217,41 +217,190 @@
         <div class="form-group" id="check-label">
           <label for="size">Size</label>
         </div>
-
-        <div class="sizeGrid">
-          <div class="form-check">
-            <div class="size">
-              <input type="checkbox" class="form-check-input" id="size-up" />
-              <label class="form-check-label" for="exampleCheck1" id="size-up"
-                >Size-Up</label
-              >
-            </div>
+        <div class="form-check">
+          <div class="size">
+            <input type="checkbox" class="form-check-input" id="size-up" />
+            <label class="form-check-label" for="exampleCheck1" id="size-up"
+              >Size-Up</label
+            >
           </div>
+        </div>
 
-          <div class="form-check">
-            <div class="size">
-              <input type="checkbox" class="form-check-input" id="size-down" />
-              <label class="form-check-label" for="exampleCheck1" id="size-down"
-                >Size-Down</label
-              >
-            </div>
+        <div class="form-check">
+          <div class="size">
+            <input type="checkbox" class="form-check-input" id="size-down" />
+            <label class="form-check-label" for="exampleCheck1" id="size-down"
+              >Size-Down</label
+            >
           </div>
+        </div>
 
-          <div class="form-check">
-            <div class="size">
-              <input
-                type="checkbox"
-                class="form-check-input"
-                id="size-neither"
-              />
-              <label
-                class="form-check-label"
-                for="exampleCheck1"
-                id="size-neither"
-                >Neither</label
-              >
-            </div>
+        <div class="form-check">
+          <div class="size">
+            <input type="checkbox" class="form-check-input" id="size-neither" />
+            <label class="form-check-label" for="exampleCheck1" id="no-label"
+              >Neither</label
+            >
           </div>
+        </div>
+
+        <!-- FIT -->
+
+        <div class="form-group" id="check-label">
+          <label for="size">Fit</label>
+        </div>
+
+        <div class="form-check">
+          <div class="size">
+            <input type="checkbox" class="form-check-input" id="wide" />
+            <label class="form-check-label" for="exampleCheck1" id="wide"
+              >Wide</label
+            >
+          </div>
+        </div>
+
+        <div class="form-check">
+          <div class="size">
+            <input type="checkbox" class="form-check-input" id="narrow" />
+            <label class="form-check-label" for="exampleCheck1" id="narrow"
+              >Narrow</label
+            >
+          </div>
+        </div>
+
+        <div class="form-check">
+          <div class="size">
+            <input type="checkbox" class="form-check-input" id="fit-neither" />
+            <label class="form-check-label" for="exampleCheck1" id="no-label"
+              >Neither</label
+            >
+          </div>
+        </div>
+
+        <div class="form-group" id="check-label">
+          <label for="size">Arch-Type</label>
+        </div>
+
+        <!-- ARCH TYPE -->
+
+        <div class="form-check">
+          <div class="size">
+            <input type="checkbox" class="form-check-input" id="high-arch" />
+            <label class="form-check-label" for="exampleCheck1" id="high-arch"
+              >High Arch</label
+            >
+          </div>
+        </div>
+
+        <div class="form-check">
+          <div class="size">
+            <input type="checkbox" class="form-check-input" id="low-arch" />
+            <label class="form-check-label" for="exampleCheck1" id="low-arch"
+              >Low Arch</label
+            >
+          </div>
+        </div>
+
+        <div class="form-check">
+          <div class="size">
+            <input type="checkbox" class="form-check-input" id="arch-neither" />
+            <label class="form-check-label" for="exampleCheck1" id="no-label"
+              >Neither</label
+            >
+          </div>
+        </div>
+
+        <!-- BONE SPUR -->
+
+        <div class="form-group" id="check-label">
+          <label for="machine-wash">Bone Spur</label>
+        </div>
+
+        <div class="form-check">
+          <div class="machineWash">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="bone-spur-yes"
+            />
+            <label class="form-check-label" for="exampleCheck1">Yes</label>
+          </div>
+        </div>
+
+        <div class="form-check">
+          <div class="machineWash">
+            <input type="checkbox" class="form-check-input" id="bone-spur-no" />
+            <label class="form-check-label" for="exampleCheck1" id="no-label"
+              >No</label
+            >
+          </div>
+        </div>
+
+        <!-- PLANTAR FASCITIS -->
+
+        <div class="form-group" id="check-label">
+          <label for="machine-wash">Plantar Fascitis</label>
+        </div>
+
+        <div class="form-check">
+          <div class="machineWash">
+            <input type="checkbox" class="form-check-input" id="plantar-yes" />
+            <label class="form-check-label" for="exampleCheck1">Yes</label>
+          </div>
+        </div>
+
+        <div class="form-check">
+          <div class="machineWash">
+            <input type="checkbox" class="form-check-input" id="plantar-no" />
+            <label class="form-check-label" for="exampleCheck1" id="no-label"
+              >No</label
+            >
+          </div>
+        </div>
+
+        <!-- BUNION -->
+
+        <div class="form-group" id="check-label">
+          <label for="machine-wash">Bunion</label>
+        </div>
+
+        <div class="form-check">
+          <div class="machineWash">
+            <input type="checkbox" class="form-check-input" id="bunion-yes" />
+            <label class="form-check-label" for="exampleCheck1">Yes</label>
+          </div>
+        </div>
+
+        <div class="form-check">
+          <div class="machineWash">
+            <input type="checkbox" class="form-check-input" id="bunion-no" />
+            <label class="form-check-label" for="exampleCheck1" id="no-label"
+              >No</label
+            >
+          </div>
+        </div>
+
+        <button type="button" class="btn btn-primary" id="submit-button">
+          Submit
+        </button>
+      </form>
+    </div>
+
+    <div class="container">
+      <p>Delete from Inventory</p>
+    </div>
+
+    <div class="form">
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Name</label>
+          <input
+            type="name"
+            class="form-control"
+            id="name"
+            aria-describedby="emailHelp"
+            placeholder="Atlantic"
+          />
         </div>
 
         <button type="submit" class="btn btn-primary">Submit</button>
@@ -268,5 +417,25 @@
         <p>COPYRIGHT &copy; 2020 CHARLESTON SHOE COMPANY</p>
       </div>
     </div>
+
+    <div class="json-data"></div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="admin.js"></script>
   </body>
 </html>
