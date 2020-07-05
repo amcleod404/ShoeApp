@@ -119,6 +119,70 @@ const loadStylePage = (page) => {
         </div>
       </div>
     </div>
+
+    <div class="col mb-4 style-tile" onclick="loadStyledShoes('Wedge')">
+      <div class="card h-100">
+        <img
+          src="./images/balboa.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Wedges</h5>
+          <p class="card-text">
+            For short kings
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col mb-4 style-tile" onclick="loadStyledShoes('Cocktail')">
+      <div class="card h-100">
+        <img
+          src="./images/fairchild.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Cocktails</h5>
+          <p class="card-text">
+            For cock lovers
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col mb-4 style-tile" onclick="loadStyledShoes('Closed-Toe')">
+      <div class="card h-100">
+        <img
+          src="./images/murray.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Closed Toe</h5>
+          <p class="card-text">
+            For cold feet
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col mb-4 style-tile" onclick="loadStyledShoes('Boot')">
+    <div class="card h-100">
+      <img
+        src="./images/federal.jpg"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">Boots</h5>
+        <p class="card-text">
+          For beados
+        </p>
+      </div>
+    </div>
+  </div>
   `;
 };
 
@@ -310,7 +374,7 @@ const loadArchTypePage = (page) => {
 const loadStyledShoes = async (style) => {
   backPage = "style";
   byStylePage.children[1].children[0].innerHTML = "";
-  byStylePage.children[0].innerText = "Sandals";
+  byStylePage.children[0].innerText = style;
   const res = await fetch("db.json");
   const data = await res.json();
   for (const item in data) {

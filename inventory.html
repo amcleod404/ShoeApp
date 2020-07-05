@@ -380,7 +380,12 @@
           </div>
         </div>
 
-        <button type="button" class="btn btn-primary" id="submit-button">
+        <button
+          type="button"
+          class="btn btn-primary"
+          id="submit-button"
+          onclick="submitData(document.getElementById('name').value, document.getElementById('price'))"
+        >
           Submit
         </button>
       </form>
@@ -397,7 +402,7 @@
           <input
             type="name"
             class="form-control"
-            id="name"
+            id="name-delete"
             aria-describedby="emailHelp"
             placeholder="Atlantic"
           />
@@ -418,8 +423,6 @@
       </div>
     </div>
 
-    <div class="json-data"></div>
-
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -436,6 +439,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="admin.js"></script>
+    <script src="inventory.js"></script>
   </body>
 </html>

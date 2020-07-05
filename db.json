@@ -20,11 +20,10 @@
     },
     "type": "Sandal",
     "washType": "Machine Washable",
-    "size": "Size up",
-    "fit": "Narrow",
+    "size": "Size Down",
+    "fit": "Wide",
     "archType": "Low Arch",
     "medicalRequirements": {
-      "highInstep-friendly": "Yes",
       "plantarFascitis-friendly": "Yes",
       "bunion-friendly": "Yes"
     },
@@ -32,93 +31,1086 @@
   },
   "Sandal-2": {
     "id": "2",
-    "name": "Gaillard",
+    "name": "Atlantic Stripe",
+    "price": "120",
+    "color": {
+      "chabray-stripe": "Yes",
+      "black-bi-stripe": "Yes",
+      "navy-bi-stripe": "Yes",
+      "gray-bi-stripe": "Yes",
+      "caramel-stripe": "Yes",
+      "red-multi-stripe": "Yes",
+      "pink-multi-stripe": "Yes"
+    },
+    "type": "Sandal",
+    "washType": "Machine Washable",
+    "size": "Size Down",
+    "fit": "Wide",
+    "archType": "Low Arch",
+    "medicalRequirements": {
+      "plantarFascitis-friendly": "Yes",
+      "bunion-friendly": "Yes"
+    },
+    "image": "./images/atlantic-stripe-sandal.jpg"
+  },
+
+  "Sandal-3": {
+    "id": "3",
+    "name": "Benjamin",
+    "price": "120",
+    "color": {
+      "onyx-ruffle": "Yes",
+      "black": "Yes",
+      "denim": "Yes",
+      "coral": "Yes",
+      "pink": "Yes",
+      "navy-linen": "Yes",
+      "linen": "Yes",
+      "navy-croc": "Yes",
+      "chambray-stripe": "Yes",
+      "gray-bi-stripe": "Yes",
+      "black-bi-stripe": "Yes",
+      "pink/blue-multi-stripe": "Yes",
+      "red/denim-stripe": "Yes",
+      "red-multi-stripe": "Yes"
+    },
+    "type": "Sandal",
+    "washType": "Machine Washable",
+    "size": "Size Down",
+    "fit": "Narrow",
+    "archType": "High Arch",
+    "medicalRequirements": {},
+    "image": "./images/benjamin-sandal.jpg"
+  },
+
+  "Sandal-7": {
+    "id": "7",
+    "name": "Cecilia",
+    "price": "100",
+    "color": {
+      "silver/gray": "Yes",
+      "white/linen": "Yes",
+      "black": "Yes"
+    },
+    "type": "Sandal",
+    "washType": "Machine Washable",
+    "size": "Size Down",
+    "fit": "Neither",
+    "archType": "Low Arch",
+    "medicalRequirements": {
+      "bunion-friendly": "Yes"
+    },
+    "image": "./images/cecilia.jpg"
+  },
+  "Sandal-8": {
+    "id": "8",
+    "name": "Collins",
+    "price": "120",
+    "color": {
+      "pearla/rosewood": "Yes",
+      "gold/black": "Yes",
+      "silver/black": "Yes",
+      "denim": "Yes",
+      "black": "Yes",
+      "linen": "Yes",
+      "navy": "Yes",
+      "white": "Yes",
+      "chambray-stripe": "Yes",
+      "orange/tan-mix": "Yes",
+      "linen/white/gold": "Yes",
+      "navy/lime/turquoise": "Yes",
+      "gray/white/silver": "Yes",
+      "black-bi-stripe": "Yes"
+    },
+    "type": "Sandal",
+    "washType": "Machine Washable",
+    "size": "Size Down",
+    "fit": "Narrow",
+    "archType": "High Arch",
+    "medicalRequirements": {},
+    "image": "./images/collins.jpeg"
+  },
+
+  "Sandal-9": {
+    "id": "9",
+    "name": "Coronado",
+    "price": "135",
+    "color": {
+      "linen": "Yes",
+      "black-linen": "Yes",
+      "navy-bi-stripe": "Yes"
+    },
+    "type": "Sandal",
+    "washType": "Machine Washable",
+    "size": "Size Down",
+    "fit": "Neither",
+    "archType": "Low Arch",
+    "medicalRequirements": {
+      "bunion-friendly": "Yes"
+    },
+    "image": "./images/coronado.jpg"
+  },
+  "Sandal-10": {
+    "id": "10",
+    "name": "Easton",
+    "price": "120",
+    "color": {
+      "navy": "Yes",
+      "black": "Yes",
+      "white": "Yes",
+      "linen": "Yes",
+      "gold": "Yes",
+      "pink": "Yes",
+      "white/linen": "Yes",
+      "lime": "Yes"
+    },
+    "type": "Sandal",
+    "washType": "Hand Washable",
+    "size": "Size Down",
+    "fit": "Narrow",
+    "archType": "Neither",
+    "medicalRequirements": {
+      "highInstep-friendly": "Yes"
+    },
+    "image": "./images/easton.jpg"
+  },
+  "Sandal-12": {
+    "id": "12",
+    "name": "Forsyth",
+    "price": "90",
+    "color": {
+      "black": "Yes",
+      "linen": "Yes"
+    },
+    "type": "Sandal",
+    "washType": "Machine Washable",
+    "size": "Size Down",
+    "fit": "Wide",
+    "archType": "Low Arch",
+    "medicalRequirements": {},
+    "image": "./images/forsyth.jpg"
+  },
+
+  "Sandal-13": {
+    "id": "13",
+    "name": "Hilton",
+    "price": "100",
+    "color": {
+      "black": "Yes",
+      "linen": "Yes",
+      "blue-metallic": "Yes",
+      "pink/gold-metallic": "Yes",
+      "beige-metallic": "Yes",
+      "navy": "Yes"
+    },
+    "type": "Sandal",
+    "washType": "Machine Washable",
+    "size": "Neither",
+    "fit": "Neither",
+    "archType": "High Arch",
+    "medicalRequirements": {
+      "bunion-friendly": "Yes"
+    },
+    "image": "./images/hilton.jpg"
+  },
+
+  "Sandal-14": {
+    "id": "14",
+    "name": "Keys",
+    "price": "90",
+    "color": {
+      "black-linen": "Yes",
+      "linen": "Yes",
+      "navy-linen": "Yes",
+      "red-linen": "Yes",
+      "turquoise": "Yes"
+    },
+    "type": "Sandal",
+    "washType": "Machine Washable",
+    "size": "Size down",
+    "fit": "Neither",
+    "archType": "Neither",
+    "medicalRequirements": {
+      "bunion-friendly": "Yes"
+    },
+    "image": "./images/keys.jpg"
+  },
+
+  "Sandal-15": {
+    "id": "15",
+    "name": "Lafayette Harrel",
+    "price": "120",
+    "color": {
+      "silver": "Yes",
+      "gold": "Yes",
+      "coral": "Yes",
+      "denim": "Yes",
+      "black/tan": "Yes",
+      "navy/red": "Yes",
+      "navy/white": "Yes",
+      "black-bi-stripe": "Yes",
+      "red/denim-stripe": "Yes",
+      "black-plain": "Yes",
+      "linen": "Yes",
+      "gray-bi-stripe": "Yes"
+    },
+    "type": "Sandal",
+    "washType": "Machine Washable",
+    "size": "Size down",
+    "fit": "Narrow",
+    "archType": "Neither",
+    "medicalRequirements": {
+      "bunion-friendly": "Yes"
+    },
+    "image": "./images/lafayette_harrel.jpg"
+  },
+
+  "Sandal-16": {
+    "id": "16",
+    "name": "Peachtree",
+    "price": "120",
+    "color": {
+      "black": "Yes",
+      "linen": "Yes"
+    },
+    "type": "Sandal",
+    "washType": "Machine Washable",
+    "size": "Size down",
+    "fit": "Neither",
+    "archType": "Neither",
+    "medicalRequirements": {},
+    "image": "./images/peachtree.jpg"
+  },
+
+  "Sandal-17": {
+    "id": "17",
+    "name": "Peri",
+    "price": "120",
+    "color": {
+      "black": "Yes",
+      "linen": "Yes",
+      "white": "Yes",
+      "pink/blue-multi-stripe": "Yes",
+      "orange/tan": "Yes",
+      "red-linen": "Yes",
+      "navy": "Yes"
+    },
+    "type": "Sandal",
+    "washType": "Hand Washable",
+    "size": "Size down",
+    "fit": "Narrow",
+    "archType": "Neither",
+    "medicalRequirements": {},
+    "image": "./images/peri.jpg"
+  },
+
+  "Sandal-18": {
+    "id": "18",
+    "name": "Seabrook",
+    "price": "90",
+    "color": {
+      "black": "Yes",
+      "linen": "Yes",
+      "navy-bi-stripe": "Yes",
+      "navy": "Yes",
+      "fuchsia": "Yes",
+      "red": "Yes"
+    },
+    "type": "Sandal",
+    "washType": "Machine Washable",
+    "size": "Size down",
+    "fit": "Neither",
+    "archType": "Neither",
+    "medicalRequirements": {
+      "bunion-friendly": "Yes"
+    },
+    "image": "./images/seabrook.jpg"
+  },
+
+  "Sandal-19": {
+    "id": "19",
+    "name": "Hampton",
+    "price": "120",
+    "color": {
+      "black": "Yes",
+      "linen": "Yes",
+      "navy": "Yes",
+      "celestial-blue": "Yes",
+      "coral": "Yes",
+      "black/linen": "Yes",
+      "white/linen": "Yes",
+      "navy/linen": "Yes",
+      "gold": "Yes",
+      "silver": "Yes",
+      "black-shimmer": "Yes",
+      "navy-shimmer": "Yes",
+      "pearla-shimmer": "Yes"
+    },
+    "type": "Sandal",
+    "washType": "Machine Washable",
+    "size": "Size down",
+    "fit": "Narrow",
+    "archType": "High Arch",
+    "medicalRequirements": {
+      "bunion-friendly": "Yes"
+    },
+    "image": "./images/hampton.jpg"
+  },
+
+  "Wedge-1": {
+    "id": "1",
+    "name": "Backless Cannon",
+    "price": "135",
+    "color": {
+      "white-linen": "Yes",
+      "black": "Yes",
+      "red": "Yes",
+      "navy": "Yes",
+      "denim": "Yes",
+      "chambray-stripe": "Yes",
+      "navy-bi-stripe": "Yes",
+      "black/white": "Yes",
+      "pink/orange": "Yes",
+      "linen": "Yes",
+      "navy-linen": "Yes"
+    },
+    "type": "Wedge",
+    "washType": "Machine Washable",
+    "size": "Size down",
+    "fit": "Wide",
+    "archType": "High Arch",
+    "medicalRequirements": {
+      "highInstep-friendly": "Yes",
+      "bunion-friendly": "Yes"
+    },
+    "image": "./images/backless-cannon-sandal.jpg"
+  },
+
+  "Wedge-2": {
+    "id": "2",
+    "name": "Backless Cooper",
     "price": "135",
     "color": {
       "white": "Yes",
       "coral": "Yes",
       "black": "Yes",
-      "tobacco": "Yes",
-      "red": "Yes",
       "navy": "Yes",
-      "denim": "Yes",
-      "black-linen": "Yes",
       "linen": "Yes",
-      "red-linen": "Yes",
-      "navy-linen": "Yes",
-      "gold-woven": "Yes",
-      "silver-woven": "Yes"
+      "navy-denim": "Yes",
+      "celestial-blue": "Yes",
+      "pink-multi-stripe": "Yes",
+      "gray/silver": "Yes",
+      "pink/orange": "Yes",
+      "turquoise/linen": "Yes",
+      "white-linen": "Yes"
     },
-    "type": "Sandal",
+    "type": "Wedge",
     "washType": "Machine Washable",
-    "size": "Size up",
-    "fit": "Wide",
-    "archType": "Low Arch",
-    "medicalRequirements": {
-      "highInstep-friendly": "Yes"
-    },
-    "image": "./images/gaillard.jpg"
+    "size": "Size down",
+    "fit": "Narrow",
+    "archType": "High Arch",
+    "medicalRequirements": {},
+    "image": "./images/backlesscooper.jpg"
   },
-  "Sandal-3": {
+
+  "Wedge-3": {
     "id": "3",
     "name": "Balboa",
     "price": "150",
     "color": {
       "white": "Yes",
-      "coral": "Yes",
       "black": "Yes",
-      "tobacco": "Yes",
-      "red": "Yes",
       "navy": "Yes",
-      "denim": "Yes",
-      "black-linen": "Yes",
       "linen": "Yes",
-      "red-linen": "Yes",
-      "navy-linen": "Yes",
-      "gold-woven": "Yes",
-      "silver-woven": "Yes"
+      "pink-multi-stripe": "Yes",
+      "caramel-stripe": "Yes"
     },
-    "type": "Sandal",
+    "type": "Wedge",
     "washType": "Machine Washable",
     "size": "Size up",
-    "fit": "Wide",
+    "fit": "Neither",
     "archType": "Neither",
     "medicalRequirements": {
-      "highInstep-friendly": "Yes",
       "plantarFascitis-friendly": "Yes",
       "bunion-friendly": "Yes"
     },
     "image": "./images/balboa.jpg"
   },
-  "Sandal-4": {
+
+  "Wedge-4": {
     "id": "4",
-    "name": "Backless Cannon",
+    "name": "Bermuda",
+    "price": "150",
+    "color": {
+      "linen": "Yes",
+      "navy-linen": "Yes",
+      "black-linen": "Yes"
+    },
+    "type": "Wedge",
+    "washType": "Machine Washable",
+    "size": "Size up",
+    "fit": "Neither",
+    "archType": "Neither",
+    "medicalRequirements": {
+      "highInstep-friendly": "Yes",
+      "bunion-friendly": "Yes"
+    },
+    "image": "./images/bermuda.jpg"
+  },
+
+  "Wedge-5": {
+    "id": "5",
+    "name": "Cannon Solid",
+    "price": "135",
+    "color": {
+      "linen": "Yes",
+      "black": "Yes",
+      "white": "Yes",
+      "coral": "Yes",
+      "gray": "Yes",
+      "gold": "Yes",
+      "silver": "Yes",
+      "denim": "Yes",
+      "red-croc": "Yes",
+      "navy-croc": "Yes",
+      "blue-croc": "Yes",
+      "pink-croc": "Yes",
+      "navy-linen": "Yes",
+      "black-linen": "Yes"
+    },
+    "type": "Wedge",
+    "washType": "Machine Washable",
+    "size": "Size down",
+    "fit": "Neither",
+    "archType": "High",
+    "medicalRequirements": {
+      "highInstep-friendly": "Yes",
+      "bunion-friendly": "Yes"
+    },
+    "image": "./images/cannon-solid.jpg"
+  },
+
+  "Wedge-6": {
+    "id": "6",
+    "name": "Cannon Stripe",
+    "price": "135",
+    "color": {
+      "red-multi-stripe": "Yes",
+      "chambray-stripe": "Yes",
+      "pink-multi-stripe": "Yes",
+      "pink/blue-multi-stripe": "Yes",
+      "yellow-bi-stripe": "Yes",
+      "black-bi-stripe": "Yes",
+      "gray/white": "Yes",
+      "red/white/blue": "Yes",
+      "red/denim-stripe": "Yes",
+      "caramel-stripe": "Yes"
+    },
+    "type": "Wedge",
+    "washType": "Machine Washable",
+    "size": "Size down",
+    "fit": "Neither",
+    "archType": "High",
+    "medicalRequirements": {
+      "highInstep-friendly": "Yes",
+      "bunion-friendly": "Yes"
+    },
+    "image": "./images/cannon-stripe.jpg"
+  },
+
+  "Wedge-7": {
+    "id": "7",
+    "name": "Cannon Two-Tone",
+    "price": "135",
+    "color": {
+      "black/tan": "Yes",
+      "orange/tan": "Yes",
+      "olive/tan": "Yes",
+      "navy/tan": "Yes",
+      "fuchsia/tan": "Yes",
+      "teal/tan": "Yes",
+      "pink/tan": "Yes",
+      "red/tan": "Yes",
+      "pistachio/tan": "Yes",
+      "black/white": "Yes",
+      "navy/red": "Yes",
+      "white/tan": "Yes",
+      "navy/white": "Yes"
+    },
+    "type": "Wedge",
+    "washType": "Machine Washable",
+    "size": "Size down",
+    "fit": "Neither",
+    "archType": "High",
+    "medicalRequirements": {
+      "highInstep-friendly": "Yes",
+      "bunion-friendly": "Yes"
+    },
+    "image": "./images/cannon-two-tone.jpg"
+  },
+
+  "Wedge-8": {
+    "id": "8",
+    "name": "Cooper",
+    "price": "135",
+    "color": {
+      "linen": "Yes",
+      "black": "Yes",
+      "white": "Yes",
+      "navy": "Yes",
+      "navy-denim": "Yes",
+      "black-linen": "Yes",
+      "tobacco-linen": "Yes",
+      "white-linen": "Yes",
+      "lime-linen": "Yes",
+      "navy-linen": "Yes",
+      "pink-linen": "Yes",
+      "orange-linen": "Yes",
+      "turquoise-linen": "Yes",
+      "gray/silver": "Yes",
+      "pink/orange": "Yes",
+      "yellow-polkadot": "Yes"
+    },
+    "type": "Wedge",
+    "washType": "Machine Washable",
+    "size": "Size down",
+    "fit": "Neither",
+    "archType": "High",
+    "medicalRequirements": {
+      "bunion-friendly": "Yes"
+    },
+    "image": "./images/cooper.jpg"
+  },
+
+  "Wedge-9": {
+    "id": "9",
+    "name": "Sully",
+    "price": "100",
+    "color": {
+      "black": "Yes",
+      "tobacco": "Yes",
+      "pink-multi-stripe": "Yes"
+    },
+    "type": "Wedge",
+    "washType": "Machine Washable",
+    "size": "Size Up",
+    "fit": "Narrow",
+    "archType": "Neither",
+    "medicalRequirements": {},
+    "image": "./images/sully.jpg"
+  },
+
+  "Wedge-10": {
+    "id": "10",
+    "name": "Harbor",
+    "price": "135",
+    "color": {
+      "white-linen": "Yes",
+      "black": "Yes",
+      "navy": "Yes",
+      "linen": "Yes",
+      "red": "Yes",
+      "gold": "Yes",
+      "silver": "Yes",
+      "oatmeal": "Yes"
+    },
+    "type": "Wedge",
+    "washType": "Hand Washable",
+    "size": "Size up",
+    "fit": "Narrow",
+    "archType": "Neither",
+    "medicalRequirements": {
+      "bunion-friendly": "Yes"
+    },
+    "image": "./images/harbor.jpg"
+  },
+
+  "Wedge-11": {
+    "id": "11",
+    "name": "Highlands",
+    "price": "135",
+    "color": {
+      "black": "Yes",
+      "navy": "Yes",
+      "linen": "Yes"
+    },
+    "type": "Wedge",
+    "washType": "Hand Washable",
+    "size": "Size down",
+    "fit": "Wide",
+    "archType": "Neither",
+    "medicalRequirements": {},
+    "image": "./images/highlands.jpg"
+  },
+
+  "Wedge-12": {
+    "id": "12",
+    "name": "Kaylee",
+    "price": "150",
+    "color": {
+      "black": "Yes",
+      "cafe": "Yes",
+      "pink-multi-stripe": "Yes",
+      "gray-pinstripe": "Yes",
+      "red-pinstripe": "Yes"
+    },
+    "type": "Wedge",
+    "washType": "Machine Washable",
+    "size": "Size down",
+    "fit": "Wide",
+    "archType": "Neither",
+    "medicalRequirements": {
+      "bunion-friendly": "Yes"
+    },
+    "image": "./images/kaylee.jpg"
+  },
+
+  "Wedge-13": {
+    "id": "13",
+    "name": "Lee",
+    "price": "150",
+    "color": {
+      "black": "Yes"
+    },
+    "type": "Wedge",
+    "washType": "Hand Washable",
+    "size": "Size down",
+    "fit": "Neither",
+    "archType": "Neither",
+    "medicalRequirements": {
+      "bunion-friendly": "Yes"
+    },
+    "image": "./images/lee.jpg"
+  },
+
+  "Wedge-14": {
+    "id": "14",
+    "name": "Lido",
+    "price": "150",
+    "color": {
+      "black": "Yes",
+      "linen": "Yes",
+      "navy": "Yes",
+      "tobacco": "Yes",
+      "white": "Yes"
+    },
+    "type": "Wedge",
+    "washType": "Machine Washable",
+    "size": "Size up",
+    "fit": "Narrow",
+    "archType": "High Arch",
+    "medicalRequirements": {
+      "bunion-friendly": "Yes"
+    },
+    "image": "./images/lido.jpg"
+  },
+
+  "Wedge-15": {
+    "id": "15",
+    "name": "MED",
+    "price": "150",
+    "color": {
+      "black": "Yes",
+      "linen": "Yes",
+      "navy": "Yes",
+      "tobacco": "Yes",
+      "white": "Yes",
+      "turquoise-nubby": "Yes",
+      "gold-speckle": "Yes",
+      "silver-woven": "Yes",
+      "gold-woven": "Yes",
+      "copper-woven": "Yes",
+      "pearl-woven": "Yes",
+      "denim": "Yes",
+      "red": "Yes",
+      "coral": "Yes"
+    },
+    "type": "Wedge",
+    "washType": "Machine Washable",
+    "size": "Size up",
+    "fit": "Wide",
+    "archType": "Low Arch",
+    "medicalRequirements": {
+      "bunion-friendly": "Yes"
+    },
+    "image": "./images/med.jpg"
+  },
+
+  "Wedge-16": {
+    "id": "16",
+    "name": "MED-Stripe",
+    "price": "150",
+    "color": {
+      "chambray-stripe": "Yes",
+      "olive-tan": "Yes",
+      "navy-bi-stripe": "Yes",
+      "coral-multi-stripe": "Yes",
+      "pink-multi-stripe": "Yes",
+      "caramel-stripe": "Yes",
+      "red-multi-stripe": "Yes"
+    },
+    "type": "Wedge",
+    "washType": "Machine Washable",
+    "size": "Size up",
+    "fit": "Wide",
+    "archType": "Low Arch",
+    "medicalRequirements": {
+      "bunion-friendly": "Yes"
+    },
+    "image": "./images/med-stripe.jpg"
+  },
+
+  "Wedge-17": {
+    "id": "17",
+    "name": "Savannah",
+    "price": "135",
+    "color": {
+      "black-herringbone": "Yes",
+      "red-multi-stripe": "Yes",
+      "leopard": "Yes"
+    },
+    "type": "Wedge",
+    "washType": "Machine Washable",
+    "size": "Size down",
+    "fit": "Neither",
+    "archType": "Neither",
+    "medicalRequirements": {},
+    "image": "./images/savannah.jpg"
+  },
+
+  "Wedge-18": {
+    "id": "18",
+    "name": "Carolina Braid",
+    "price": "135",
+    "color": {
+      "gray-braid": "Yes"
+    },
+    "type": "Wedge",
+    "washType": "Hand Washable",
+    "size": "Size Down",
+    "fit": "Neither",
+    "archType": "Neither",
+    "medicalRequirements": {
+      "bunion-friendly": "Yes"
+    },
+    "image": "./images/carolina-braid.jpg"
+  },
+  "Wedge-19": {
+    "id": "19",
+    "name": "Carolina Linen",
+    "price": "135",
+    "color": {
+      "navy-linen": "Yes",
+      "linen": "Yes",
+      "black-linen": "Yes"
+    },
+    "type": "Wedge",
+    "washType": "Machine Washable",
+    "size": "Size Down",
+    "fit": "Neither",
+    "archType": "Neither",
+    "medicalRequirements": {
+      "bunion-friendly": "Yes"
+    },
+    "image": "./images/carolina-linen.jpg"
+  },
+  "Wedge-20": {
+    "id": "20",
+    "name": "Carolina Satin",
+    "price": "135",
+    "color": {
+      "flamingo": "Yes"
+    },
+    "type": "Wedge",
+    "washType": "Hand Washable",
+    "size": "Size Down",
+    "fit": "Neither",
+    "archType": "Neither",
+    "medicalRequirements": {
+      "bunion-friendly": "Yes"
+    },
+    "image": "./images/carolina-satin.jpg"
+  },
+
+  "Boot-1": {
+    "id": "1",
+    "name": "Federal",
+    "price": "165",
+    "color": {
+      "navy": "Yes",
+      "gray": "Yes",
+      "tan": "Yes"
+    },
+    "type": "Boot",
+    "size": "Size Up",
+    "fit": "Narrow",
+    "archType": "Neither",
+    "medicalRequirements": {},
+    "image": "./images/federal.jpg"
+  },
+  "Boot-2": {
+    "id": "2",
+    "name": "Aiken",
+    "price": "165",
+    "color": {
+      "black-tapestry": "Yes",
+      "brown-tapestry": "Yes",
+      "sand-tapestry": "Yes",
+      "black-aztec": "Yes",
+      "brown-aztec": "Yes"
+    },
+    "type": "Boot",
+    "size": "Size Up",
+    "fit": "Narrow",
+    "archtype": "Neither",
+    "medicalRequirements": {},
+    "image": "./images/Aiken.jpg"
+  },
+  "Boot-3": {
+    "id": "3",
+    "name": "Barcelona Boot",
+    "price": "150",
+    "color": {
+      "tan-herringbone": "Yes",
+      "black-herringbone": "Yes",
+      "brown-herringbone": "Yes",
+      "black-woven": "Yes",
+      "chestnut-woven": "Yes",
+      "black-multi-stripe": "Yes"
+    },
+    "type": "Boot",
+    "size": "Size Up",
+    "washType": "Machine Washable",
+    "fit": "Neither",
+    "archType": "Neither",
+    "medicalRequirements": {},
+    "image": "./images/barcelona.jpg"
+  },
+  "Boot-4": {
+    "id": "4",
+    "name": "Upper Monterey Boot",
+    "price": "150",
+    "color": {
+      "black-herringbone": "Yes",
+      "brown-herringbone": "Yes",
+      "gray": "Yes",
+      "chestnut-woven": "Yes",
+      "black-woven": "Yes",
+      "denim-stripe": "Yes",
+      "black-multi-stripe": "Yes",
+      "gray-pinstripe": "Yes",
+      "leopard": "Yes",
+      "multi-stripe": "Yes"
+    },
+    "type": "Boot",
+    "size": "Size Up",
+    "washType": "Machine Washable",
+    "fit": "Neither",
+    "archType": "Neither",
+    "medicalRequirements": {},
+    "image": "./images/upper-montery.jpg"
+  },
+  "Boot-5": {
+    "id": "5",
+    "name": "Lower King Boot",
+    "price": "150",
+    "color": {
+      "black-herringbone": "Yes",
+      "brown-herringbone": "Yes",
+      "tan-herringbone": "Yes",
+      "black-woven": "Yes",
+      "chestnut-woven": "Yes",
+      "python": "Yes",
+      "denim-stripe": "Yes",
+      "black-multi-stripe": "Yes",
+      "red-multi-stripe": "Yes",
+      "gray-pinstripe": "Yes",
+      "leopard": "Yes",
+      "cherry": "Yes"
+    },
+    "type": "Boot",
+    "size": "Size Up",
+    "washType": "Machine Washable",
+    "fit": "Neither",
+    "archType": "Neither",
+    "medicalRequirements": {
+      "bunion-friendly": "Yes"
+    },
+    "image": "./images/lowerkingboot.jpg"
+  },
+  "Boot-6": {
+    "id": "6",
+    "name": "Torino Boot",
+    "price": "150",
+    "color": {
+      "black-herringbone": "Yes",
+      "brown-herringbone": "Yes",
+      "tan-mesh": "Yes"
+    },
+    "type": "Boot",
+    "size": "Size Up",
+    "washType": "Machine Washable",
+    "fit": "Neither",
+    "archType": "Neither",
+    "medicalRequirements": {},
+    "image": "./images/torino.jpg"
+  },
+  "Boot-7": {
+    "id": "7",
+    "name": "Telfair Boot",
+    "price": "150",
+    "color": {
+      "cherry": "Yes",
+      "black-woven": "Yes",
+      "chestnut-woven": "Yes",
+      "black-herringbone": "Yes",
+      "brown-herringbone": "Yes",
+      "tan-herringbone": "Yes",
+      "red-stripe": "Yes",
+      "gray-pinstripe": "Yes",
+      "leopard": "Yes"
+    },
+    "type": "Boot",
+    "size": "Size Up",
+    "washType": "Machine Washable",
+    "fit": "Wide",
+    "archType": "Neither",
+    "medicalRequirements": {
+      "bunion-friendly": "Yes"
+    },
+    "image": "./images/telfair.jpg"
+  },
+  "Boot-8": {
+    "id": "8",
+    "name": "Chelsea Rain Boot",
+    "price": "100",
+    "color": {
+      "black/gray-plaid": "Yes",
+      "tan/tan-stripe": "Yes"
+    },
+    "type": "Boot",
+    "size": "Size Up",
+    "fit": "Neither",
+    "archType": "Neither",
+    "medicalRequirements": {},
+    "image": "./images/chelsea.jpg"
+  },
+  "Boot-9": {
+    "id": "9",
+    "name": "Arcadian Boot",
+    "price": "150",
+    "color": {
+      "primary-stripe": "Yes",
+      "tan-multi-stripe": "Yes",
+      "red": "Yes"
+    },
+    "type": "Boot",
+    "size": "Size Up",
+    "fit": "Neither",
+    "archType": "Neither",
+    "washType": "Machine Washable",
+    "medicalRequirements": {},
+    "image": "./images/arcadian.jpg"
+  },
+  "Boot-10": {
+    "id": "10",
+    "name": "Colonial Rain Boot",
+    "price": "135",
+    "color": {
+      "rust": "Yes"
+    },
+    "type": "Boot",
+    "size": "Size Up",
+    "fit": "Neither",
+    "archType": "Neither",
+    "medicalRequirements": {},
+    "image": "./images/colonial.jpg"
+  },
+  "Boot-11": {
+    "id": "11",
+    "name": "Wentworth Rain Boot",
+    "price": "135",
+    "color": {
+      "black": "Yes"
+    },
+    "type": "Boot",
+    "size": "Size Up",
+    "fit": "Neither",
+    "archType": "Neither",
+    "medicalRequirements": {},
+    "image": "./images/wentworth.jpg"
+  },
+  "Boot-12": {
+    "id": "12",
+    "name": "Legare Rain Boot",
+    "price": "120",
+    "color": {
+      "olive": "Yes"
+    },
+    "type": "Boot",
+    "size": "Size Up",
+    "fit": "Neither",
+    "archType": "Neither",
+    "medicalRequirements": {},
+    "image": "./images/legare.jpg"
+  },
+
+  "Cocktail-1": {
+    "id": "1",
+    "name": "Gaillard",
     "price": "135",
     "color": {
       "white": "Yes",
-      "coral": "Yes",
       "black": "Yes",
-      "tobacco": "Yes",
-      "red": "Yes",
       "navy": "Yes",
-      "denim": "Yes",
-      "black-linen": "Yes",
       "linen": "Yes",
-      "red-linen": "Yes",
-      "navy-linen": "Yes",
-      "gold-woven": "Yes",
-      "silver-woven": "Yes"
+      "black-beaded": "Yes",
+      "pearla": "Yes"
     },
-    "type": "Sandal",
+    "type": "Cocktail",
     "washType": "Machine Washable",
     "size": "Size up",
     "fit": "Narrow",
     "archType": "Low Arch",
-    "medicalRequirements": {
-      "highInstep-friendly": "Yes",
-      "plantarFascitis-friendly": "Yes",
-      "bunion-friendly": "Yes"
+    "medicalRequirements": {},
+    "image": "./images/gaillard.jpg"
+  },
+  "Cocktail-2": {
+    "id": "2",
+    "name": "Fairchild",
+    "price": "135",
+    "color": {
+      "navy": "Yes",
+      "black": "Yes",
+      "linen": "Yes",
+      "gold": "Yes",
+      "silver": "Yes"
     },
-    "image": "./images/backlesscannon.jpg"
+    "type": "Cocktail",
+    "washType": "Hand Washable",
+    "size": "Size Up",
+    "fit": "Neither",
+    "archType": "Neither",
+    "medicalRequirements": {},
+    "image": "./images/fairchild.jpg"
+  },
+
+  "Closed-Toe-1": {
+    "id": "1",
+    "name": "Murray",
+    "price": "135",
+    "color": {
+      "navy": "Yes",
+      "black": "Yes",
+      "coral": "Yes",
+      "leopard": "Yes",
+      "tobacco": "Yes"
+    },
+    "type": "Closed-Toe",
+    "size": "Neither",
+    "fit": "Neither",
+    "archType": "Neither",
+    "medicalRequirements": {},
+    "image": "./images/murray.jpg"
   }
 }
