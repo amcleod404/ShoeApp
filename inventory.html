@@ -380,11 +380,31 @@
           </div>
         </div>
 
+        <!-- IMAGE -->
+
+        <div class="form-group" id="check-label">
+          <label for="image">Image</label>
+        </div>
+
+        <div class="form-check" style="margin-bottom: 75px;">
+          <div class="image">
+            <input
+              name="image"
+              type="file"
+              class="form-check-input"
+              id="image-link"
+            />
+          </div>
+        </div>
+
         <button
           type="button"
           class="btn btn-primary"
           id="submit-button"
-          onclick="submitData(document.getElementById('name').value, document.getElementById('price'))"
+          onclick="submitData(
+            document.getElementById('name').value,
+            document.getElementById('price').value
+          );"
         >
           Submit
         </button>
@@ -439,6 +459,7 @@
       crossorigin="anonymous"
     ></script>
 
+    <script src="easyhttp.js"></script>
     <script src="inventory.js"></script>
   </body>
 </html>

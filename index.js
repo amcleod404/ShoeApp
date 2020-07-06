@@ -59,8 +59,7 @@ const goBack = () => {
     case "special-requirements":
       bySpecialRequirementsPage.children[1].children[0].innerHTML = "";
       loadSpecialRequirementsPage(bySpecialRequirementsPage);
-      bySpecialRequirementsPage.children[0].innerText =
-        "By Special Requirements";
+      bySpecialRequirementsPage.children[0].innerText = "By Problem Type";
       backPage = "";
       break;
     case "price":
@@ -187,20 +186,42 @@ const loadStylePage = (page) => {
 };
 
 const loadColorPage = (page) => {
-  page.children[1].children[0].innerHTML += `
-  <div class="col mb-4 style-tile" onclick="loadColoredShoes('Black')">
-    <div class="card h-100">
-      <img
-        src="./images/gaillard.jpg"
-        class="card-img-top"
-        alt="..."
-      />
-      <div class="card-body">
-        <h5 class="card-title">Black</h5>
+  const colors = [
+    "black",
+    "white",
+    "coral",
+    "tobacco",
+    "red",
+    "navy",
+    "denim",
+    "silver",
+    "gold",
+    "pink",
+    "orange",
+    "turquoise",
+    "lime",
+    "fuchsia",
+    "pearla",
+  ];
+
+  colors.forEach((color) => {
+    page.children[1].children[0].innerHTML += `
+    <div class="col mb-4 style-tile" onclick="loadColoredShoes('${color}')">
+      <div class="card h-100">
+        <img
+          src="./images/${color}.jpg"
+          class="card-img-top"
+          alt="${color}"
+        />
+        <div class="card-body">
+          <h5 class="card-title">${
+            color.charAt(0).toUpperCase() + color.slice(1)
+          }</h5>
+        </div>
       </div>
     </div>
-  </div>
-  `;
+    `;
+  });
 };
 
 const loadSpecialRequirementsPage = (page) => {
@@ -213,7 +234,7 @@ const loadSpecialRequirementsPage = (page) => {
         alt="..."
       />
       <div class="card-body">
-        <h5 class="card-title">Plantar Fascitis Friendly</h5>
+        <h5 class="card-title">Plantar Fascitis</h5>
       </div>
     </div>
   </div>
@@ -225,7 +246,7 @@ const loadSpecialRequirementsPage = (page) => {
         alt="..."
       />
       <div class="card-body">
-        <h5 class="card-title">High Instep</h5>
+        <h5 class="card-title">Bone Spur</h5>
       </div>
     </div>
   </div>
@@ -237,7 +258,7 @@ const loadSpecialRequirementsPage = (page) => {
         alt="..."
       />
       <div class="card-body">
-        <h5 class="card-title">Bunion Friendly</h5>
+        <h5 class="card-title">Bunion</h5>
       </div>
     </div>
   </div>
@@ -246,7 +267,7 @@ const loadSpecialRequirementsPage = (page) => {
 
 const loadPricePage = (page) => {
   page.children[1].children[0].innerHTML += `
-  <div class="col mb-4 style-tile" onclick="loadPriceShoes('0to50')">
+  <div class="col mb-4 style-tile" onclick="loadPriceShoes('50to100')">
     <div class="card h-100">
       <img
         src="./images/gaillard.jpg"
@@ -254,11 +275,11 @@ const loadPricePage = (page) => {
         alt="..."
       />
       <div class="card-body">
-        <h5 class="card-title">$0 - $50</h5>
+        <h5 class="card-title">$50 - $100</h5>
       </div>
     </div>
   </div>
-  <div class="col mb-4 style-tile" onclick="loadPriceShoes('51to100')">
+  <div class="col mb-4 style-tile" onclick="loadPriceShoes('100to125')">
     <div class="card h-100">
       <img
         src="./images/atlantic.jpg"
@@ -266,31 +287,31 @@ const loadPricePage = (page) => {
         alt="..."
       />
       <div class="card-body">
-        <h5 class="card-title">$51 - $100</h5>
+        <h5 class="card-title">$101 - $125</h5>
       </div>
     </div>
   </div>
-  <div class="col mb-4 style-tile" onclick="loadPriceShoes('101to150')">
+  <div class="col mb-4 style-tile" onclick="loadPriceShoes('125to150')">
     <div class="card h-100">
       <img
-        src="./images/gaillard.jpg"
+        src="./images/forsyth.jpg"
         class="card-img-top"
         alt="..."
       />
       <div class="card-body">
-        <h5 class="card-title">$101 - $150</h5>
+        <h5 class="card-title">$125 - $150</h5>
       </div>
     </div>
   </div>
-  <div class="col mb-4 style-tile" onclick="loadPriceShoes('151to200')">
+  <div class="col mb-4 style-tile" onclick="loadPriceShoes('150to200')">
     <div class="card h-100">
       <img
-        src="./images/gaillard.jpg"
+        src="./images/cannon-two-tone.jpg"
         class="card-img-top"
         alt="..."
       />
       <div class="card-body">
-        <h5 class="card-title">$151 - 200</h5>
+        <h5 class="card-title">$150 - $200</h5>
       </div>
     </div>
   </div>
@@ -320,18 +341,6 @@ const loadFitPage = (page) => {
       />
       <div class="card-body">
         <h5 class="card-title">Wide</h5>
-      </div>
-    </div>
-  </div>
-  <div class="col mb-4 style-tile" onclick="loadFits('neither')">
-    <div class="card h-100">
-      <img
-        src="./images/gaillard.jpg"
-        class="card-img-top"
-        alt="..."
-      />
-      <div class="card-body">
-        <h5 class="card-title">Neither Wide Nor Narrow</h5>
       </div>
     </div>
   </div>
@@ -404,12 +413,15 @@ const loadStyledShoes = async (style) => {
 const loadColoredShoes = async (searchedColor) => {
   backPage = "color";
   byColorPage.children[1].children[0].innerHTML = "";
-  byColorPage.children[0].innerText = "Black";
+  byColorPage.children[0].innerText =
+    searchedColor.charAt(0).toUpperCase() + searchedColor.slice(1);
   const res = await fetch("db.json");
   const data = await res.json();
   for (const item in data) {
     const { name, price, image, type, color } = data[item];
-    if (searchedColor.toLowerCase() in color) {
+    console.log(searchedColor.toLowerCase());
+    if (JSON.stringify(color).includes(searchedColor.toLowerCase())) {
+      console.log(searchedColor.toLowerCase());
       byColorPage.children[1].children[0].innerHTML += `
       <div class="col mb-4">
         <div class="card h-100">
@@ -477,25 +489,25 @@ const loadSpecialRequirementShoes = async (requirement) => {
 
 const loadPriceShoes = async (price) => {
   backPage = "price";
-  let minPrice = 0;
-  let maxPrice = 50;
+  let minPrice = 50;
+  let maxPrice = 100;
   let title = "";
   switch (price) {
-    case "0to50":
-      title = "$0 - $50";
+    case "50to100":
+      title = "$50 - $100";
       break;
-    case "51to100":
-      title = "$51 - $100";
-      minPrice = 51;
-      maxPrice = 100;
-      break;
-    case "101to150":
-      title = "$101 - $150";
+    case "100to125":
+      title = "$100 - $125";
       minPrice = 101;
+      maxPrice = 125;
+      break;
+    case "125to150":
+      title = "$125 - $150";
+      minPrice = 126;
       maxPrice = 150;
       break;
-    case "151to200":
-      title = "$151 - $200";
+    case "150to200":
+      title = "$150 - $200";
       minPrice = 151;
       maxPrice = 200;
       break;

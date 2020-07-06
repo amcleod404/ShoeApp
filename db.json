@@ -600,31 +600,6 @@
     "image": "./images/sully.jpg"
   },
 
-  "Wedge-10": {
-    "id": "10",
-    "name": "Harbor",
-    "price": "135",
-    "color": {
-      "white-linen": "Yes",
-      "black": "Yes",
-      "navy": "Yes",
-      "linen": "Yes",
-      "red": "Yes",
-      "gold": "Yes",
-      "silver": "Yes",
-      "oatmeal": "Yes"
-    },
-    "type": "Wedge",
-    "washType": "Hand Washable",
-    "size": "Size up",
-    "fit": "Narrow",
-    "archType": "Neither",
-    "medicalRequirements": {
-      "bunion-friendly": "Yes"
-    },
-    "image": "./images/harbor.jpg"
-  },
-
   "Wedge-11": {
     "id": "11",
     "name": "Highlands",
@@ -1095,6 +1070,143 @@
     "image": "./images/fairchild.jpg"
   },
 
+  "Cocktail-3": {
+    "id": "3",
+    "name": "Tribeca",
+    "price": "150",
+    "color": {
+      "tan": "Yes",
+      "black": "Yes"
+      
+    },
+    "type": "Cocktail",
+    "washType": "Hand Washable",
+    "size": "Size Up",
+    "fit": "Neither",
+    "archType": "Neither",
+    "medicalRequirements": {},
+    "image": "./images/tribeca.jpg"
+  },
+
+  "Cocktail-4": {
+    "id": "4",
+    "name": "Marlin",
+    "price": "135",
+    "color": {
+      "navy": "Yes",
+      "black": "Yes",
+      "gold": "Yes",
+      "silver": "Yes"
+    },
+    "type": "Cocktail",
+    "washType": "Hand Washable",
+    "size": "Size Down",
+    "fit": "Neither",
+    "archType": "Neither",
+    "medicalRequirements": {},
+    "image": "./images/marlin.jpg"
+  },
+
+  "Cocktail-5": {
+    "id": "5",
+    "name": "Telfair",
+    "price": "135",
+    "color": {
+      "navy": "Yes",
+      "black": "Yes",
+      "linen": "Yes",
+      "gold": "Yes",
+      "silver": "Yes",
+      "white/linen":"Yes"
+    },
+    "type": "Cocktail",
+    "washType": "Machine Washable",
+    "size": "Size Down",
+    "fit": "Wide",
+    "archType": "High Arch",
+    "medicalRequirements": {
+      "bunion-friendly":"Yes"
+    },
+    "image": "./images/telfair-cocktail.jpg"
+  },
+
+  "Cocktail-6": {
+    "id": "6",
+    "name": "Harbor",
+    "price": "135",
+    "color": {
+      "white-linen": "Yes",
+      "black": "Yes",
+      "navy": "Yes",
+      "linen": "Yes",
+      "red": "Yes",
+      "gold": "Yes",
+      "silver": "Yes",
+      "oatmeal": "Yes"
+    },
+    "type": "Cocktail",
+    "washType": "Hand Washable",
+    "size": "Size up",
+    "fit": "Narrow",
+    "archType": "Neither",
+    "medicalRequirements": {
+      "bunion-friendly": "Yes"
+    },
+    "image": "./images/harbor.jpg"
+  },
+
+  "Cocktail-7": {
+    "id": "7",
+    "name": "Grace",
+    "price": "135",
+    "color": {
+      "black": "Yes",
+      "navy": "Yes",
+      "linen": "Yes",
+      "red": "Yes",
+      "gold": "Yes",
+      "silver": "Yes",
+      "tan/yellow": "Yes",
+      "pink/orange":"Yes",
+      "black/white":"Yes"
+
+
+    },
+    "type": "Cocktail",
+    "washType": "Hand Washable",
+    "size": "Size Down",
+    "fit": "Narrow",
+    "archType": "Neither",
+    "medicalRequirements": {
+      "bunion-friendly": "Yes"
+    },
+    "image": "./images/grace.jpg"
+  },
+
+  "Cocktail-8": {
+    "id": "8",
+    "name": "Crawford",
+    "price": "135",
+    "color": {
+      "black-mesh": "Yes",
+      "rustic-tobacco": "Yes",
+      "black":"Yes",
+      "navy": "Yes",
+      "gold": "Yes",
+      "silver": "Yes"
+
+    },
+    "type": "Cocktail",
+    "washType": "Hand Washable",
+    "size": "Size Down",
+    "fit": "Wide",
+    "archType": "Neither",
+    "medicalRequirements": {
+      "bunion-friendly": "Yes"
+    },
+    "image": "./images/crawford.jpg"
+  },
+
   "Closed-Toe-1": {
     "id": "1",
     "name": "Murray",
@@ -1112,5 +1224,223 @@
     "archType": "Neither",
     "medicalRequirements": {},
     "image": "./images/murray.jpg"
+  },
+
+  "Closed-Toe-2": {
+    "id": "2",
+    "name": "Courtland",
+    "price": "79",
+    "color": {
+      "red":"Yes",
+      "white":"Yes"
+    },
+    "type": "Closed-Toe",
+    "washType":"Machine Washable",
+    "size": "Neither",
+    "fit": "Neither",
+    "archType": "Neither",
+    "medicalRequirements": {},
+    "image": "./images/courtland.jpg"
+  },
+
+  "Closed-Toe-3": {
+    "id": "3",
+    "name": "Cru",
+    "price": "135",
+    "color": {
+      "black":"Yes",
+      "linen":"Yes",
+      "red/white/blue":"Yes"
+    },
+    "type": "Closed-Toe",
+    "washType":"Machine Washable",
+    "size": "Size down",
+    "fit": "Neither",
+    "archType": "Neither",
+    "medicalRequirements": {},
+    "image": "./images/cru.jpg"
+  },
+
+  "Closed-Toe-4": {
+    "id": "4",
+    "name": "Lemon",
+    "price": "135",
+    "color": {
+      "army-green":"Yes",
+      "tan":"Yes",
+      "gray":"Yes"
+    },
+    "type": "Closed-Toe",
+    "size": "Size Up",
+    "fit": "Neither",
+    "archType": "Neither",
+    "medicalRequirements": {},
+    "image": "./images/lemon.jpg"
+  },
+
+  "Closed-Toe-5": {
+    "id": "5",
+    "name": "Cape",
+    "price": "135",
+    "color": {
+      "denim-stripe":"Yes",
+      "leopard":"Yes",
+      "black-herringbone":"Yes",
+      "tan-herringbone":"Yes",
+      "black-multi-stripe":"Yes"
+    },
+    "type": "Closed-Toe",
+    "washType":"Machine Washable",
+    "size": "Size Down",
+    "fit": "Neither",
+    "archType": "Neither",
+    "medicalRequirements": {},
+    "image": "./images/cape.jpg"
+  },
+
+  "Closed-Toe-6": {
+    "id": "6",
+    "name": "Chewie",
+    "price": "135",
+    "color": {
+      "olive/navy":"Yes",
+      "blush/gray":"Yes",
+      "gray/gray":"Yes",
+      "navy/navy":"Yes"
+    },
+    "type": "Closed-Toe",
+    "washType":"Hand Washable",
+    "size": "Size Up",
+    "fit": "Wide",
+    "archType": "Neither",
+    "medicalRequirements": {},
+    "image": "./images/chewie.jpg"
+  },
+
+  "Closed-Toe-7": {
+    "id": "7",
+    "name": "Blakely",
+    "price": "135",
+    "color": {
+      "gray/white-pinstripe":"Yes",
+      "black/white-pinstripe":"Yes",
+      "camo-gold-ruffle": "Yes",
+      "leopard":"Yes",
+      "black":"Yes",
+      "coral-multi-stripe":"Yes",
+      "black/gray-pinstripe": "Yes",
+      "red/white-pinstripe": "Yes"
+
+    },
+    "type": "Closed-Toe",
+    "washType":"Machine Washable",
+    "size": "Size Up",
+    "fit": "Narrow",
+    "archType": "Neither",
+    "medicalRequirements": {},
+    "image": "./images/blakely.jpg"
+  },
+
+  "Closed-Toe-8": {
+    "id": "8",
+    "name": "Gigi",
+    "price": "95",
+    "color": {
+      "coral":"Yes",
+      "black": "Yes",
+      "silver":"Yes",
+      "gold":"Yes",
+      "tan": "Yes"
+
+    },
+    "type": "Closed-Toe",
+    "washType":"Machine Washable",
+    "size": "Size up",
+    "fit": "Narrow",
+    "archType": "Neither",
+    "medicalRequirements": {},
+    "image": "./images/gigi.jpg"
+  },
+
+  "Closed-Toe-9": {
+    "id": "9",
+    "name": "Upper Monterey Shoe",
+    "price": "135",
+    "color": {
+      "black-herringbone":"Yes",
+      "tan-herringbone":"Yes"
+    },
+    "type": "Closed-Toe",
+    "washType":"Machine Washable",
+    "size": "Size up",
+    "fit": "Neither",
+    "archType": "Neither",
+    "medicalRequirements": {},
+    "image": "./images/upper-monterey-shoe.jpg"
+  },
+
+  "Closed-Toe-10": {
+    "id": "10",
+    "name": "Marina",
+    "price": "135",
+    "color": {
+      "black":"Yes",
+      "navy":"Yes",
+      "gray-pinstripe":"Yes",
+      "navy-multi-stripe": "Yes",
+      "pink-multi-stripe":"Yes"
+
+    },
+    "type": "Closed-Toe",
+    "washType":"Hand Washable",
+    "size": "Size up",
+    "fit": "Narrow",
+    "archType": "Neither",
+    "medicalRequirements": {},
+    "image": "./images/marina.jpg"
+  },
+
+  "Closed-Toe-11": {
+    "id": "11",
+    "name": "Lulu",
+    "price": "69",
+    "color": {
+      "red":"Yes",
+      "gray":"Yes",
+      "black":"Yes",
+      "navy":"Yes",
+      "pink":"Yes"
+
+    },
+    "type": "Closed-Toe",
+    "washType":"Machine Washable",
+    "size": "Size up",
+    "fit": "Narrow",
+    "archType": "Neither",
+    "medicalRequirements": {},
+    "image": "./images/lulu.jpg"
+  },
+
+  "Closed-Toe-12": {
+    "id": "12",
+    "name": "Athena",
+    "price": "99",
+    "color": {
+      "navy-pinstripe":"Yes",
+      "navy":"Yes",
+      "black-bi-stripe":"Yes",
+      "black-multi-stripe":"Yes",
+      "fuchsia-multi-stripe": "Yes",
+      "gray-stripe": "Yes",
+      "garnate": "Yes"
+
+    },
+    "type": "Closed-Toe",
+    "washType":"Machine Washable",
+    "size": "Size up",
+    "fit": "Narrow",
+    "archType": "Neither",
+    "medicalRequirements": {},
+    "image": "./images/athena.jpg"
   }
 }

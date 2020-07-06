@@ -11,7 +11,7 @@
   display: flex;
   justify-content: center;
   margin-top: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   margin-bottom: 100px;
 }
 
@@ -24,6 +24,10 @@
 
 .form {
   margin: 0px 50px;
+}
+
+#login {
+  margin-bottom: 250px;
 }
 
 .colorGrid {
@@ -90,7 +94,7 @@
   bottom: 0;
   height: 20vh;
   background-color: var(--green);
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   align-items: center;
   justify-content: center;
 }

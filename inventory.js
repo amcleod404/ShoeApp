@@ -1,6 +1,5 @@
-import { writeFile } from "fs";
-
 var shoeObject = {};
+const http = new easyHTTP();
 
 const submitData = (name, price) => {
   shoeObject = {
@@ -8,11 +7,28 @@ const submitData = (name, price) => {
     price: price,
   };
 
-  writeFile("db.json", JSON.stringify(shoeObject, null, 4), (err) => {
+  console.log(shoeObject);
+
+  http.post('deleteshit.json', shoeObject, function (err, post) {
     if (err) {
-      console.error(err);
-      return;
+      console.log(err);
+    } else {
+      console.log(post);
     }
-    console.log("File has been modified");
+  });
+};
+
+const post = (url, data) => {
+  return new Promise((resolve, reject) => {
+    fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    })
+      .then((res) => res.json())
+      .then((data) => resolve(data))
+      .catch((err) => reject(err));
   });
 };
