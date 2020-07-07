@@ -11,6 +11,7 @@ const byArchTypePage = document.querySelector("#by-arch-type-page");
 const bySpecialRequirementsPage = document.querySelector(
   "#by-special-requirements-page"
 );
+const individualShoePage = document.querySelector("#individual-shoe-page");
 
 let backPage = "";
 
@@ -194,9 +195,12 @@ const loadColorPage = (page) => {
     "red",
     "navy",
     "denim",
+    "linen",
     "silver",
     "gold",
+    "stripe",
     "pink",
+    "croc",
     "orange",
     "turquoise",
     "lime",
@@ -234,7 +238,7 @@ const loadSpecialRequirementsPage = (page) => {
         alt="..."
       />
       <div class="card-body">
-        <h5 class="card-title">Plantar Fascitis</h5>
+        <h5 class="card-title">Plantar Fascitis </h5>
       </div>
     </div>
   </div>
@@ -299,7 +303,7 @@ const loadPricePage = (page) => {
         alt="..."
       />
       <div class="card-body">
-        <h5 class="card-title">$125 - $150</h5>
+        <h5 class="card-title">$126 - $150</h5>
       </div>
     </div>
   </div>
@@ -311,7 +315,7 @@ const loadPricePage = (page) => {
         alt="..."
       />
       <div class="card-body">
-        <h5 class="card-title">$150 - $200</h5>
+        <h5 class="card-title">$151 - $200</h5>
       </div>
     </div>
   </div>
@@ -390,7 +394,7 @@ const loadStyledShoes = async (style) => {
     const { name, price, image, type } = data[item];
     if (type === style) {
       byStylePage.children[1].children[0].innerHTML += `
-      <div class="col mb-4">
+      <div class="col mb-4" style="cursor: pointer;" onclick="loadShoePage('${name}')">
         <div class="card h-100">
           <img
             src="${image}"
@@ -423,7 +427,7 @@ const loadColoredShoes = async (searchedColor) => {
     if (JSON.stringify(color).includes(searchedColor.toLowerCase())) {
       console.log(searchedColor.toLowerCase());
       byColorPage.children[1].children[0].innerHTML += `
-      <div class="col mb-4">
+      <div class="col mb-4" style="cursor: pointer;" onclick="loadShoePage('${name}')">
         <div class="card h-100">
           <img
             src="${image}"
@@ -467,7 +471,7 @@ const loadSpecialRequirementShoes = async (requirement) => {
     const { name, price, image, type, color, medicalRequirements } = data[item];
     if (requirement in medicalRequirements) {
       bySpecialRequirementsPage.children[1].children[0].innerHTML += `
-      <div class="col mb-4">
+      <div class="col mb-4" style="cursor: pointer;" onclick="loadShoePage('${name}')">
         <div class="card h-100">
           <img
             src="${image}"
@@ -497,17 +501,17 @@ const loadPriceShoes = async (price) => {
       title = "$50 - $100";
       break;
     case "100to125":
-      title = "$100 - $125";
+      title = "$101 - $125";
       minPrice = 101;
       maxPrice = 125;
       break;
     case "125to150":
-      title = "$125 - $150";
+      title = "$126 - $150";
       minPrice = 126;
       maxPrice = 150;
       break;
     case "150to200":
-      title = "$150 - $200";
+      title = "$151 - $200";
       minPrice = 151;
       maxPrice = 200;
       break;
@@ -522,7 +526,7 @@ const loadPriceShoes = async (price) => {
     const { name, price, image, type, color, medicalRequirements } = data[item];
     if (parseInt(price) <= maxPrice && parseInt(price) >= minPrice) {
       byPricePage.children[1].children[0].innerHTML += `
-      <div class="col mb-4">
+      <div class="col mb-4" style="cursor: pointer;" onclick="loadShoePage('${name}')">
         <div class="card h-100">
           <img
             src="${image}"
@@ -566,7 +570,7 @@ const loadFits = async (searchedFit) => {
     const { name, price, image, type, color, fit } = data[item];
     if (fit.toLowerCase() === searchedFit) {
       byFitPage.children[1].children[0].innerHTML += `
-      <div class="col mb-4">
+      <div class="col mb-4" style="cursor: pointer;" onclick="loadShoePage('${name}')">
         <div class="card h-100">
           <img
             src="${image}"
@@ -607,7 +611,7 @@ const loadArchTypes = async (searchedArchType) => {
     const { name, price, image, type, color, fit, archType } = data[item];
     if (archType.toLowerCase() === searchedArchType) {
       byArchTypePage.children[1].children[0].innerHTML += `
-      <div class="col mb-4">
+      <div class="col mb-4" style="cursor: pointer;" onclick="loadShoePage('${name}')">
         <div class="card h-100">
           <img
             src="${image}"
@@ -628,3 +632,107 @@ const loadArchTypes = async (searchedArchType) => {
 };
 
 /***** END FILTER PAGE FUNCTIONS *****/
+
+/***** INDIVIDUAL SHOE PAGE FUNCTIONS *****/
+
+const loadShoePage = async (serachedName) => {
+  const lowerCaseName = serachedName.toLowerCase();
+
+  // Clear the page
+  byStylePage.style.display = "none";
+  byStylePage.children[1].children[0].innerHTML = "";
+  byColorPage.style.display = "none";
+  byColorPage.children[1].children[0].innerHTML = "";
+  bySpecialRequirementsPage.style.display = "none";
+  bySpecialRequirementsPage.children[1].children[0].innerHTML = "";
+  byPricePage.style.display = "none";
+  byPricePage.children[1].children[0].innerHTML = "";
+  byFitPage.style.display = "none";
+  byFitPage.children[1].children[0].innerHTML = "";
+  byArchTypePage.style.display = "none";
+  byArchTypePage.children[1].children[0].innerHTML = "";
+
+  individualShoePage.style.display = "flex";
+
+  const res = await fetch("db.json");
+  const data = await res.json();
+  for (const item in data) {
+    const {
+      name,
+      price,
+      image,
+      type,
+      color,
+      medicalRequirements,
+      washType,
+      fit,
+      size,
+    } = data[item];
+    let colorList = '<ul class="text-muted">';
+    for (let item in color) {
+      item = "" + item;
+      while (item.includes("-")) {
+        item = item.replace("-", " ");
+      }
+
+      item = item
+        .toLowerCase()
+        .split(" ")
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(" ");
+
+      item = item
+        .split("/")
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join("/");
+
+      colorList += `<li>${item.charAt(0).toUpperCase() + item.slice(1)}</li>`;
+    }
+    colorList += "</ul>";
+    let specialReqList = '<p class="card-text">';
+    for (let req in medicalRequirements) {
+      console.log(req);
+      if (req === "plantarFascitis-friendly") {
+        specialReqList += `<span class="badge badge-primary" style="margin-right: 10px;">Plantar Fascitis Friendly</span>`;
+      }
+      if (req === "bunion-friendly") {
+        specialReqList += `<span class="badge badge-success" style="margin-right: 10px;">Bunion Friendly</span>`;
+      }
+      if (req === "highInstep-friendly") {
+        specialReqList += `<span class="badge badge-info" style="margin-right: 10px;">Bone Spur Friendly</span>`;
+      }
+    }
+
+    if (washType) {
+      specialReqList += `<span class="badge badge-danger">${washType}</span>`;
+    }
+
+    specialReqList += "</p>";
+    let sizeInfo = "";
+    if (fit.toLowerCase() !== "neither") {
+      sizeInfo += `This shoe has a ${fit.toLowerCase()} fit. `;
+    }
+    if (size.toLowerCase() !== "neither") {
+      sizeInfo += `If you are a half size, make sure to ${size.toLowerCase()}.`;
+    }
+    if (lowerCaseName === name.toLowerCase()) {
+      individualShoePage.innerHTML += `
+      <div class="card mb-3" style="max-width: 65%;">
+        <img src="${image}" class="card-img-top" alt="..." style="border-bottom: 1px solid lightgrey;">
+        <div class="card-body">
+          <h3 class="card-title">${name}</h5>
+          <h5 class="card-title">$${price}</h5>
+          <p class="card-text">
+            The ${name} is a ${type}. It supports the following colors choices:
+            ${colorList}
+            ${sizeInfo}
+          </p>
+          ${specialReqList}
+        </div>
+      </div>
+    `;
+    }
+  }
+};
+
+/***** END INDIVIDUAL SHOE PAGE FUNCTIONS *****/

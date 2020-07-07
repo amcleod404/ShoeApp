@@ -1,34 +1,31 @@
 var shoeObject = {};
-const http = new easyHTTP();
 
-const submitData = (name, price) => {
-  shoeObject = {
-    name: name,
-    price: price,
-  };
+var browserify = require('browserify');
+var path = require('path');
+var fs = require('fs');
 
-  console.log(shoeObject);
+document.querySelector('#submit-button').addEventListener('click', (e) => {
+  submitData(
+    document.getElementById('name').value,
+    document.getElementById('price').value
+  );
+});
 
-  http.post('deleteshit.json', shoeObject, function (err, post) {
+function submitData(name, price) {
+  var files = ['./Scripts/test/x.js', './Scripts/test/y.js'];
+  var outputDirectory = './wwwroot';
+
+  fs.mkdir(outputDirectory, function (err) {
     if (err) {
-      console.log(err);
-    } else {
-      console.log(post);
+      throw err;
     }
-  });
-};
 
-const post = (url, data) => {
-  return new Promise((resolve, reject) => {
-    fetch(url, {
-      method: 'POST',
-      headers: {
-        'Content-type': 'application/json',
-      },
-      body: JSON.stringify(data),
-    })
-      .then((res) => res.json())
-      .then((data) => resolve(data))
-      .catch((err) => reject(err));
+    var b = browserify(files);
+
+    b.plugin('factor-bundle', {
+      outputs: ['output/x.js', 'output/y.js'],
+    });
+
+    b.bundle().pipe(fs.createWriteStream(path.join(outputdir, './common.js')));
   });
-};
+}

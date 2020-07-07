@@ -26,10 +26,6 @@
   margin: 0px 50px;
 }
 
-#login {
-  margin-bottom: 250px;
-}
-
 .colorGrid {
   display: grid;
   grid-template-columns: auto auto auto auto;
