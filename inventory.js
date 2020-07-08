@@ -1,31 +1,28 @@
-var shoeObject = {};
+const saveFile = () => {
+  // Get the data from each element on the form.
+  const name = document.getElementById("name");
+  const price = document.getElementById("price");
+  const type = document.getElementById("price");
+  const color = document.getElementById("price");
+  const machineWash = document.getElementById("price");
 
-var browserify = require('browserify');
-var path = require('path');
-var fs = require('fs');
+  // This variable stores all the data.
+  const data = "\r Name: " + name.value + " \r\n " + "Price: " + price.value;
 
-document.querySelector('#submit-button').addEventListener('click', (e) => {
-  submitData(
-    document.getElementById('name').value,
-    document.getElementById('price').value
-  );
-});
+  // Convert the text to BLOB.
+  const textToBLOB = new Blob([data], { type: "text/plain" });
+  const sFileName = "formData.txt"; // The file to save the data.
 
-function submitData(name, price) {
-  var files = ['./Scripts/test/x.js', './Scripts/test/y.js'];
-  var outputDirectory = './wwwroot';
+  const newLink = document.createElement("a");
+  newLink.download = sFileName;
 
-  fs.mkdir(outputDirectory, function (err) {
-    if (err) {
-      throw err;
-    }
+  if (window.webkitURL != null) {
+    newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+  } else {
+    newLink.href = window.URL.createObjectURL(textToBLOB);
+    newLink.style.display = "none";
+    document.body.appendChild(newLink);
+  }
 
-    var b = browserify(files);
-
-    b.plugin('factor-bundle', {
-      outputs: ['output/x.js', 'output/y.js'],
-    });
-
-    b.bundle().pipe(fs.createWriteStream(path.join(outputdir, './common.js')));
-  });
-}
+  newLink.click();
+};

@@ -38,6 +38,7 @@
       <img
         src="//cdn.shopify.com/s/files/1/0095/1340/2427/files/desktop-logo2_97afb2c6-4f3f-40a2-ac5d-6bcc06dbe5c0_400x.png?v=1560278115"
         itemprop="logo"
+        onclick="window.location.href = 'index.html'"
       />
     </div>
     <div class="container">
@@ -397,7 +398,12 @@
           </div>
         </div>
 
-        <button type="button" class="btn btn-primary" id="submit-button">
+        <button
+          type="button"
+          class="btn btn-primary"
+          id="submit-button"
+          onclick="saveFile()"
+        >
           Submit
         </button>
       </form>
@@ -420,7 +426,9 @@
           />
         </div>
 
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn btn-primary">
+          Submit
+        </button>
       </form>
     </div>
 
@@ -435,7 +443,7 @@
       </div>
     </div>
 
-    <script src="bundle.js"></script>
+    <script src="inventory.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

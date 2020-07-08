@@ -114,7 +114,7 @@ const loadStylePage = (page) => {
         <div class="card-body">
           <h5 class="card-title">Sandals</h5>
           <p class="card-text">
-            For sandal lovers
+          Check out our summer sandals collection
           </p>
         </div>
       </div>
@@ -130,7 +130,7 @@ const loadStylePage = (page) => {
         <div class="card-body">
           <h5 class="card-title">Wedges</h5>
           <p class="card-text">
-            For short kings
+          Pump it up with our most comfortable sandal wedges
           </p>
         </div>
       </div>
@@ -146,7 +146,7 @@ const loadStylePage = (page) => {
         <div class="card-body">
           <h5 class="card-title">Cocktails</h5>
           <p class="card-text">
-            For cock lovers
+          From cobblestones to cocktails and everyday to evening
           </p>
         </div>
       </div>
@@ -162,7 +162,7 @@ const loadStylePage = (page) => {
         <div class="card-body">
           <h5 class="card-title">Closed Toe</h5>
           <p class="card-text">
-            For cold feet
+          The best closed toed shoes that Charleston Shoe Company has to offer
           </p>
         </div>
       </div>
@@ -178,7 +178,7 @@ const loadStylePage = (page) => {
       <div class="card-body">
         <h5 class="card-title">Boots</h5>
         <p class="card-text">
-          For beados
+          Comfort and functionality all in one
         </p>
       </div>
     </div>
@@ -200,7 +200,6 @@ const loadColorPage = (page) => {
     "gold",
     "stripe",
     "pink",
-    "croc",
     "orange",
     "turquoise",
     "lime",
@@ -257,7 +256,7 @@ const loadSpecialRequirementsPage = (page) => {
   <div class="col mb-4 style-tile" onclick="loadSpecialRequirementShoes('bunion-friendly')">
     <div class="card h-100">
       <img
-        src="./images/gaillard.jpg"
+        src="./images/cecilia.jpg"
         class="card-img-top"
         alt="..."
       />
@@ -274,7 +273,7 @@ const loadPricePage = (page) => {
   <div class="col mb-4 style-tile" onclick="loadPriceShoes('50to100')">
     <div class="card h-100">
       <img
-        src="./images/gaillard.jpg"
+        src="./images/gigi.jpg"
         class="card-img-top"
         alt="..."
       />
@@ -327,7 +326,7 @@ const loadFitPage = (page) => {
   <div class="col mb-4 style-tile" onclick="loadFits('narrow')">
     <div class="card h-100">
       <img
-        src="./images/gaillard.jpg"
+        src="./images/benjamin.jpg"
         class="card-img-top"
         alt="..."
       />
@@ -339,7 +338,7 @@ const loadFitPage = (page) => {
   <div class="col mb-4 style-tile" onclick="loadFits('wide')">
     <div class="card h-100">
       <img
-        src="./images/atlantic.jpg"
+        src="./images/kaylee.jpg"
         class="card-img-top"
         alt="..."
       />
@@ -356,7 +355,7 @@ const loadArchTypePage = (page) => {
   <div class="col mb-4 style-tile" onclick="loadArchTypes('high arch')">
     <div class="card h-100">
       <img
-        src="./images/gaillard.jpg"
+        src="./images/collins.jpeg"
         class="card-img-top"
         alt="..."
       />
@@ -368,7 +367,7 @@ const loadArchTypePage = (page) => {
   <div class="col mb-4 style-tile" onclick="loadArchTypes('low arch')">
     <div class="card h-100">
       <img
-        src="./images/atlantic.jpg"
+        src="./images/med.jpg"
         class="card-img-top"
         alt="..."
       />
@@ -386,6 +385,7 @@ const loadArchTypePage = (page) => {
 
 const loadStyledShoes = async (style) => {
   backPage = "style";
+  console.log(backPage);
   byStylePage.children[1].children[0].innerHTML = "";
   byStylePage.children[0].innerText = style;
   const res = await fetch("db.json");
@@ -452,13 +452,13 @@ const loadSpecialRequirementShoes = async (requirement) => {
   let title = "";
   switch (requirement) {
     case "highInstep-friendly":
-      title = "High Instep Friendly";
+      title = "Bone Spur";
       break;
     case "plantarFascitis-friendly":
-      title = "Plantar Fascitis Friendly";
+      title = "Plantar Fascitis";
       break;
     case "bunion-friendly":
-      title = "Bunion Friendly";
+      title = "Bunion";
       break;
     default:
       break;
@@ -635,8 +635,8 @@ const loadArchTypes = async (searchedArchType) => {
 
 /***** INDIVIDUAL SHOE PAGE FUNCTIONS *****/
 
-const loadShoePage = async (serachedName) => {
-  const lowerCaseName = serachedName.toLowerCase();
+const loadShoePage = async (searchedName) => {
+  const lowerCaseName = searchedName.toLowerCase();
 
   // Clear the page
   byStylePage.style.display = "none";
@@ -691,7 +691,6 @@ const loadShoePage = async (serachedName) => {
     colorList += "</ul>";
     let specialReqList = '<p class="card-text">';
     for (let req in medicalRequirements) {
-      console.log(req);
       if (req === "plantarFascitis-friendly") {
         specialReqList += `<span class="badge badge-primary" style="margin-right: 10px;">Plantar Fascitis Friendly</span>`;
       }
