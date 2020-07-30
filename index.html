@@ -25,15 +25,6 @@
     <title>In-Store Guide</title>
   </head>
   <body>
-    <div id="adminButton">
-      <button
-        type="button"
-        class="btn btn-outline-primary"
-        onclick="window.location.href= 'admin.html'"
-      >
-        admin
-      </button>
-    </div>
     <div id="button">
       <button type="button" class="btn btn-outline-primary" onclick="goBack()">
         &larr;
@@ -48,7 +39,7 @@
     </div>
 
     <div class="container" id="body-text">
-      <p>Select a folder to get started</p>
+      <p>Select how you would like to filter the styles</p>
     </div>
 
     <div class="container" id="by-style-page" style="display: none;">
@@ -97,6 +88,12 @@
       </div>
     </div>
 
+    <div class="container" id="search-page" style="display: none;">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2"></div>
+      </div>
+    </div>
+
     <div
       class="container"
       id="individual-shoe-page"
@@ -111,7 +108,7 @@
         <p>By Style</p>
         <div class="description">
           <p id="by-style">
-            Sandals, Wedges, Cocktails... Finding a style you love is easy
+            Categorize by shoe type
           </p>
         </div>
       </div>
@@ -120,7 +117,7 @@
         <p>By Color</p>
         <div class="description">
           <p id="by-color">
-            From Black and White to Coral and Fuschia, we got you covered
+            Filter by specific color
           </p>
         </div>
       </div>
@@ -130,8 +127,7 @@
         <p>By Problem Type</p>
         <div class="description">
           <p id="by-special-requirements">
-            Don't let bone spurs or plantar fascitis keep you from looking
-            stylish
+            Styles for bone spurs, bunions, and more
           </p>
         </div>
       </div>
@@ -140,7 +136,7 @@
         <p>By Price</p>
         <div class="description">
           <p id="by-price">
-            Find a shoe in a price range that works for you
+            Organize by price range
           </p>
         </div>
       </div>
@@ -149,7 +145,7 @@
         <p>By Fit</p>
         <div class="description">
           <p id="by-fit">
-            Looking for the perfect fit? Look no further
+            Styles for narrow or wide feet
           </p>
         </div>
       </div>
@@ -158,11 +154,78 @@
         <p>By Arch-Type</p>
         <div class="description">
           <p id="by-arch-type">
-            Heels for date night? Flats for the beach? We got it all
+            Styles for low or high arch
           </p>
         </div>
       </div>
     </div>
+    <!-- <div id="search-divider">
+      <input
+        class="form-control"
+        id="search-bar"
+        type="text"
+        placeholder="Search..."
+      />
+       Default dropright button
+      <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Filter
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Special Requirements
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#">Plantar Fascitis</a>
+                <a class="dropdown-item" href="#">Bone Spurs</a>
+                <a class="dropdown-item" href="#">Bunion Friendly</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Price Ranges
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#">$50 - $100</a>
+                <a class="dropdown-item" href="#">$101 - $125</a>
+                <a class="dropdown-item" href="#">$126 - $150</a>
+                <a class="dropdown-item" href="#">$151 - $200</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div> -->
 
     <div class="footer">
       <div id="footerimg">

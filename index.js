@@ -1,102 +1,148 @@
 // UI Elements
-const html = document.querySelector("#landing");
-const backButton = document.querySelector("#button");
-const container = document.querySelector("#media-grid");
-const selectAFolder = document.querySelector("#body-text");
-const byStylePage = document.querySelector("#by-style-page");
-const byColorPage = document.querySelector("#by-color-page");
-const byPricePage = document.querySelector("#by-price-page");
-const byFitPage = document.querySelector("#by-fit-page");
-const byArchTypePage = document.querySelector("#by-arch-type-page");
+const html = document.querySelector('#landing');
+const backButton = document.querySelector('#button');
+const container = document.querySelector('#media-grid');
+const selectAFolder = document.querySelector('#body-text');
+const byStylePage = document.querySelector('#by-style-page');
+const byColorPage = document.querySelector('#by-color-page');
+const byPricePage = document.querySelector('#by-price-page');
+const byFitPage = document.querySelector('#by-fit-page');
+const byArchTypePage = document.querySelector('#by-arch-type-page');
 const bySpecialRequirementsPage = document.querySelector(
-  "#by-special-requirements-page"
+  '#by-special-requirements-page'
 );
-const individualShoePage = document.querySelector("#individual-shoe-page");
+const individualShoePage = document.querySelector('#individual-shoe-page');
+// const searchBar = document.querySelector('#search-bar');
+// const searchPage = document.querySelector('#search-page');
 
-let backPage = "";
+let backPage = '';
 
 // UI Animation
-container.addEventListener("click", (e) => {
-  if (e.target.id !== "media-grid") {
-    if (e.target.id === "by-style") {
-      byStylePage.style.display = "flex";
+/** searchBar.addEventListener('keyup', async (e) => {
+  e.preventDefault();
+  const value = searchBar.value;
+  backPage = '';
+  searchPage.style.display = 'flex';
+  searchPage.children[0].children[0].innerHTML = '';
+  const res = await fetch('db.json');
+  const data = await res.json();
+  for (const item in data) {
+    const { name, price, image, type } = data[item];
+    searchPage.children[0].children[0].innerHTML += `
+      <div class="col mb-4" style="cursor: pointer;" onclick="loadShoePage('${name}')">
+        <div class="card h-100">
+          <img
+            src="${image}"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">${name}</h5>
+            <p class="card-text">
+              $${price}
+            </p>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+}); */
+
+container.addEventListener('click', (e) => {
+  if (e.target.id !== 'media-grid') {
+    if (e.target.id === 'by-style') {
+      byStylePage.style.display = 'flex';
       loadStylePage(byStylePage);
-    } else if (e.target.id === "by-color") {
-      byColorPage.style.display = "flex";
+    } else if (e.target.id === 'by-color') {
+      byColorPage.style.display = 'flex';
       loadColorPage(byColorPage);
-    } else if (e.target.id === "by-special-requirements") {
-      bySpecialRequirementsPage.style.display = "flex";
+    } else if (e.target.id === 'by-special-requirements') {
+      bySpecialRequirementsPage.style.display = 'flex';
       loadSpecialRequirementsPage(bySpecialRequirementsPage);
-    } else if (e.target.id === "by-price") {
-      byPricePage.style.display = "flex";
+    } else if (e.target.id === 'by-price') {
+      byPricePage.style.display = 'flex';
       loadPricePage(byPricePage);
-    } else if (e.target.id === "by-fit") {
-      byFitPage.style.display = "flex";
+    } else if (e.target.id === 'by-fit') {
+      byFitPage.style.display = 'flex';
       loadFitPage(byFitPage);
-    } else if (e.target.id === "by-arch-type") {
-      byArchTypePage.style.display = "flex";
+    } else if (e.target.id === 'by-arch-type') {
+      byArchTypePage.style.display = 'flex';
       loadArchTypePage(byArchTypePage);
     }
-    container.style.display = "none";
-    selectAFolder.style.display = "none";
-    backButton.style.display = "block";
+    container.style.display = 'none';
+    selectAFolder.style.display = 'none';
+    backButton.style.display = 'block';
   }
 });
 
 const goBack = () => {
   switch (backPage) {
-    case "style":
-      byStylePage.children[1].children[0].innerHTML = "";
+    // Selection Pages
+    case 'style':
+      individualShoePage.innerHTML = '';
+      byStylePage.style.display = 'flex';
+      byStylePage.children[1].children[0].innerHTML = '';
       loadStylePage(byStylePage);
-      byStylePage.children[0].innerText = "By Style";
-      backPage = "";
+      byStylePage.children[0].innerText = 'By Style';
+      backPage = '';
       break;
-    case "color":
-      byColorPage.children[1].children[0].innerHTML = "";
+    case 'color':
+      individualShoePage.innerHTML = '';
+      byColorPage.style.display = 'flex';
+      byColorPage.children[1].children[0].innerHTML = '';
       loadColorPage(byColorPage);
-      byColorPage.children[0].innerText = "By Color";
-      backPage = "";
+      byColorPage.children[0].innerText = 'By Color';
+      backPage = '';
       break;
-    case "special-requirements":
-      bySpecialRequirementsPage.children[1].children[0].innerHTML = "";
+    case 'special-requirements':
+      individualShoePage.innerHTML = '';
+      bySpecialRequirementsPage.style.display = 'flex';
+      bySpecialRequirementsPage.children[1].children[0].innerHTML = '';
       loadSpecialRequirementsPage(bySpecialRequirementsPage);
-      bySpecialRequirementsPage.children[0].innerText = "By Problem Type";
-      backPage = "";
+      bySpecialRequirementsPage.children[0].innerText = 'By Problem Type';
+      backPage = '';
       break;
-    case "price":
-      byPricePage.children[1].children[0].innerHTML = "";
+    case 'price':
+      individualShoePage.innerHTML = '';
+      byPricePage.style.display = 'flex';
+      byPricePage.children[1].children[0].innerHTML = '';
       loadPricePage(byPricePage);
-      byPricePage.children[0].innerText = "By Price";
-      backPage = "";
+      byPricePage.children[0].innerText = 'By Price';
+      backPage = '';
       break;
-    case "fit":
-      byFitPage.children[1].children[0].innerHTML = "";
+    case 'fit':
+      individualShoePage.innerHTML = '';
+      byFitPage.style.display = 'flex';
+      byFitPage.children[1].children[0].innerHTML = '';
       loadFitPage(byFitPage);
-      byFitPage.children[0].innerText = "By Fit";
-      backPage = "";
+      byFitPage.children[0].innerText = 'By Fit';
+      backPage = '';
       break;
-    case "arch-type":
-      byArchTypePage.children[1].children[0].innerHTML = "";
+    case 'arch-type':
+      individualShoePage.innerHTML = '';
+      byArchTypePage.style.display = 'flex';
+      byArchTypePage.children[1].children[0].innerHTML = '';
       loadArchTypePage(byArchTypePage);
-      byArchTypePage.children[0].innerText = "By Arch-Type";
-      backPage = "";
+      byArchTypePage.children[0].innerText = 'By Arch-Type';
+      backPage = '';
       break;
+    //
     default:
-      container.style.display = "grid";
-      selectAFolder.style.display = "flex";
-      backButton.style.display = "none";
-      byStylePage.style.display = "none";
-      byStylePage.children[1].children[0].innerHTML = "";
-      byColorPage.style.display = "none";
-      byColorPage.children[1].children[0].innerHTML = "";
-      bySpecialRequirementsPage.style.display = "none";
-      bySpecialRequirementsPage.children[1].children[0].innerHTML = "";
-      byPricePage.style.display = "none";
-      byPricePage.children[1].children[0].innerHTML = "";
-      byFitPage.style.display = "none";
-      byFitPage.children[1].children[0].innerHTML = "";
-      byArchTypePage.style.display = "none";
-      byArchTypePage.children[1].children[0].innerHTML = "";
+      container.style.display = 'grid';
+      selectAFolder.style.display = 'flex';
+      backButton.style.display = 'none';
+      byStylePage.style.display = 'none';
+      byStylePage.children[1].children[0].innerHTML = '';
+      byColorPage.style.display = 'none';
+      byColorPage.children[1].children[0].innerHTML = '';
+      bySpecialRequirementsPage.style.display = 'none';
+      bySpecialRequirementsPage.children[1].children[0].innerHTML = '';
+      byPricePage.style.display = 'none';
+      byPricePage.children[1].children[0].innerHTML = '';
+      byFitPage.style.display = 'none';
+      byFitPage.children[1].children[0].innerHTML = '';
+      byArchTypePage.style.display = 'none';
+      byArchTypePage.children[1].children[0].innerHTML = '';
       break;
   }
 };
@@ -113,9 +159,6 @@ const loadStylePage = (page) => {
         />
         <div class="card-body">
           <h5 class="card-title">Sandals</h5>
-          <p class="card-text">
-          Check out our summer sandals collection
-          </p>
         </div>
       </div>
     </div>
@@ -129,9 +172,6 @@ const loadStylePage = (page) => {
         />
         <div class="card-body">
           <h5 class="card-title">Wedges</h5>
-          <p class="card-text">
-          Pump it up with our most comfortable sandal wedges
-          </p>
         </div>
       </div>
     </div>
@@ -145,9 +185,6 @@ const loadStylePage = (page) => {
         />
         <div class="card-body">
           <h5 class="card-title">Cocktails</h5>
-          <p class="card-text">
-          From cobblestones to cocktails and everyday to evening
-          </p>
         </div>
       </div>
     </div>
@@ -161,9 +198,6 @@ const loadStylePage = (page) => {
         />
         <div class="card-body">
           <h5 class="card-title">Closed Toe</h5>
-          <p class="card-text">
-          The best closed toed shoes that Charleston Shoe Company has to offer
-          </p>
         </div>
       </div>
     </div>
@@ -177,9 +211,6 @@ const loadStylePage = (page) => {
       />
       <div class="card-body">
         <h5 class="card-title">Boots</h5>
-        <p class="card-text">
-          Comfort and functionality all in one
-        </p>
       </div>
     </div>
   </div>
@@ -188,23 +219,23 @@ const loadStylePage = (page) => {
 
 const loadColorPage = (page) => {
   const colors = [
-    "black",
-    "white",
-    "coral",
-    "tobacco",
-    "red",
-    "navy",
-    "denim",
-    "linen",
-    "silver",
-    "gold",
-    "stripe",
-    "pink",
-    "orange",
-    "turquoise",
-    "lime",
-    "fuchsia",
-    "pearla",
+    'black',
+    'white',
+    'coral',
+    'tobacco',
+    'red',
+    'navy',
+    'denim',
+    'linen',
+    'silver',
+    'gold',
+    'stripe',
+    'pink',
+    'orange',
+    'turquoise',
+    'lime',
+    'fuchsia',
+    'pearla',
   ];
 
   colors.forEach((color) => {
@@ -297,7 +328,7 @@ const loadPricePage = (page) => {
   <div class="col mb-4 style-tile" onclick="loadPriceShoes('125to150')">
     <div class="card h-100">
       <img
-        src="./images/forsyth.jpg"
+        src="./images/backless-cannon.jpg"
         class="card-img-top"
         alt="..."
       />
@@ -309,7 +340,7 @@ const loadPricePage = (page) => {
   <div class="col mb-4 style-tile" onclick="loadPriceShoes('150to200')">
     <div class="card h-100">
       <img
-        src="./images/cannon-two-tone.jpg"
+        src="./images/aiken.jpg"
         class="card-img-top"
         alt="..."
       />
@@ -384,15 +415,14 @@ const loadArchTypePage = (page) => {
 /***** FILTER PAGE FUNCTIONS *****/
 
 const loadStyledShoes = async (style) => {
-  backPage = "style";
-  console.log(backPage);
-  byStylePage.children[1].children[0].innerHTML = "";
-  byStylePage.children[0].innerText = style;
-  const res = await fetch("db.json");
+  backPage = 'style';
+  byStylePage.children[1].children[0].innerHTML = '';
+  byStylePage.children[0].innerText = style + 's';
+  const res = await fetch('db.json');
   const data = await res.json();
   for (const item in data) {
     const { name, price, image, type } = data[item];
-    if (type === style) {
+    if (type.includes(style)) {
       byStylePage.children[1].children[0].innerHTML += `
       <div class="col mb-4" style="cursor: pointer;" onclick="loadShoePage('${name}')">
         <div class="card h-100">
@@ -415,17 +445,15 @@ const loadStyledShoes = async (style) => {
 };
 
 const loadColoredShoes = async (searchedColor) => {
-  backPage = "color";
-  byColorPage.children[1].children[0].innerHTML = "";
+  backPage = 'color';
+  byColorPage.children[1].children[0].innerHTML = '';
   byColorPage.children[0].innerText =
     searchedColor.charAt(0).toUpperCase() + searchedColor.slice(1);
-  const res = await fetch("db.json");
+  const res = await fetch('db.json');
   const data = await res.json();
   for (const item in data) {
     const { name, price, image, type, color } = data[item];
-    console.log(searchedColor.toLowerCase());
     if (JSON.stringify(color).includes(searchedColor.toLowerCase())) {
-      console.log(searchedColor.toLowerCase());
       byColorPage.children[1].children[0].innerHTML += `
       <div class="col mb-4" style="cursor: pointer;" onclick="loadShoePage('${name}')">
         <div class="card h-100">
@@ -448,24 +476,24 @@ const loadColoredShoes = async (searchedColor) => {
 };
 
 const loadSpecialRequirementShoes = async (requirement) => {
-  backPage = "special-requirements";
-  let title = "";
+  backPage = 'special-requirements';
+  let title = '';
   switch (requirement) {
-    case "highInstep-friendly":
-      title = "Bone Spur";
+    case 'highInstep-friendly':
+      title = 'Bone Spur';
       break;
-    case "plantarFascitis-friendly":
-      title = "Plantar Fascitis";
+    case 'plantarFascitis-friendly':
+      title = 'Plantar Fascitis';
       break;
-    case "bunion-friendly":
-      title = "Bunion";
+    case 'bunion-friendly':
+      title = 'Bunion';
       break;
     default:
       break;
   }
-  bySpecialRequirementsPage.children[1].children[0].innerHTML = "";
+  bySpecialRequirementsPage.children[1].children[0].innerHTML = '';
   bySpecialRequirementsPage.children[0].innerText = title;
-  const res = await fetch("db.json");
+  const res = await fetch('db.json');
   const data = await res.json();
   for (const item in data) {
     const { name, price, image, type, color, medicalRequirements } = data[item];
@@ -492,35 +520,35 @@ const loadSpecialRequirementShoes = async (requirement) => {
 };
 
 const loadPriceShoes = async (price) => {
-  backPage = "price";
+  backPage = 'price';
   let minPrice = 50;
   let maxPrice = 100;
-  let title = "";
+  let title = '';
   switch (price) {
-    case "50to100":
-      title = "$50 - $100";
+    case '50to100':
+      title = '$50 - $100';
       break;
-    case "100to125":
-      title = "$101 - $125";
+    case '100to125':
+      title = '$101 - $125';
       minPrice = 101;
       maxPrice = 125;
       break;
-    case "125to150":
-      title = "$126 - $150";
+    case '125to150':
+      title = '$126 - $150';
       minPrice = 126;
       maxPrice = 150;
       break;
-    case "150to200":
-      title = "$151 - $200";
+    case '150to200':
+      title = '$151 - $200';
       minPrice = 151;
       maxPrice = 200;
       break;
     default:
       break;
   }
-  byPricePage.children[1].children[0].innerHTML = "";
+  byPricePage.children[1].children[0].innerHTML = '';
   byPricePage.children[0].innerText = title;
-  const res = await fetch("db.json");
+  const res = await fetch('db.json');
   const data = await res.json();
   for (const item in data) {
     const { name, price, image, type, color, medicalRequirements } = data[item];
@@ -547,24 +575,24 @@ const loadPriceShoes = async (price) => {
 };
 
 const loadFits = async (searchedFit) => {
-  backPage = "fit";
-  let title = "";
+  backPage = 'fit';
+  let title = '';
   switch (searchedFit) {
-    case "narrow":
-      title = "Narrow";
+    case 'narrow':
+      title = 'Narrow';
       break;
-    case "wide":
-      title = "Wide";
+    case 'wide':
+      title = 'Wide';
       break;
-    case "neither":
-      title = "Neither Wide Nor Narrow";
+    case 'neither':
+      title = 'Neither Wide Nor Narrow';
       break;
     default:
       break;
   }
-  byFitPage.children[1].children[0].innerHTML = "";
+  byFitPage.children[1].children[0].innerHTML = '';
   byFitPage.children[0].innerText = title;
-  const res = await fetch("db.json");
+  const res = await fetch('db.json');
   const data = await res.json();
   for (const item in data) {
     const { name, price, image, type, color, fit } = data[item];
@@ -591,21 +619,21 @@ const loadFits = async (searchedFit) => {
 };
 
 const loadArchTypes = async (searchedArchType) => {
-  backPage = "arch-type";
-  let title = "";
+  backPage = 'arch-type';
+  let title = '';
   switch (searchedArchType) {
-    case "high arch":
-      title = "High";
+    case 'high arch':
+      title = 'High';
       break;
-    case "low arch":
-      title = "Low";
+    case 'low arch':
+      title = 'Low';
       break;
     default:
       break;
   }
-  byArchTypePage.children[1].children[0].innerHTML = "";
+  byArchTypePage.children[1].children[0].innerHTML = '';
   byArchTypePage.children[0].innerText = title;
-  const res = await fetch("db.json");
+  const res = await fetch('db.json');
   const data = await res.json();
   for (const item in data) {
     const { name, price, image, type, color, fit, archType } = data[item];
@@ -639,22 +667,22 @@ const loadShoePage = async (searchedName) => {
   const lowerCaseName = searchedName.toLowerCase();
 
   // Clear the page
-  byStylePage.style.display = "none";
-  byStylePage.children[1].children[0].innerHTML = "";
-  byColorPage.style.display = "none";
-  byColorPage.children[1].children[0].innerHTML = "";
-  bySpecialRequirementsPage.style.display = "none";
-  bySpecialRequirementsPage.children[1].children[0].innerHTML = "";
-  byPricePage.style.display = "none";
-  byPricePage.children[1].children[0].innerHTML = "";
-  byFitPage.style.display = "none";
-  byFitPage.children[1].children[0].innerHTML = "";
-  byArchTypePage.style.display = "none";
-  byArchTypePage.children[1].children[0].innerHTML = "";
+  byStylePage.style.display = 'none';
+  byStylePage.children[1].children[0].innerHTML = '';
+  byColorPage.style.display = 'none';
+  byColorPage.children[1].children[0].innerHTML = '';
+  bySpecialRequirementsPage.style.display = 'none';
+  bySpecialRequirementsPage.children[1].children[0].innerHTML = '';
+  byPricePage.style.display = 'none';
+  byPricePage.children[1].children[0].innerHTML = '';
+  byFitPage.style.display = 'none';
+  byFitPage.children[1].children[0].innerHTML = '';
+  byArchTypePage.style.display = 'none';
+  byArchTypePage.children[1].children[0].innerHTML = '';
 
-  individualShoePage.style.display = "flex";
+  individualShoePage.style.display = 'flex';
 
-  const res = await fetch("db.json");
+  const res = await fetch('db.json');
   const data = await res.json();
   for (const item in data) {
     const {
@@ -670,50 +698,49 @@ const loadShoePage = async (searchedName) => {
     } = data[item];
     let colorList = '<ul class="text-muted">';
     for (let item in color) {
-      item = "" + item;
-      while (item.includes("-")) {
-        item = item.replace("-", " ");
+      item = '' + item;
+      while (item.includes('-')) {
+        item = item.replace('-', ' ');
       }
 
       item = item
         .toLowerCase()
-        .split(" ")
+        .split(' ')
         .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-        .join(" ");
+        .join(' ');
 
       item = item
-        .split("/")
+        .split('/')
         .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-        .join("/");
+        .join('/');
 
       colorList += `<li>${item.charAt(0).toUpperCase() + item.slice(1)}</li>`;
     }
-    colorList += "</ul>";
+    colorList += '</ul>';
     let specialReqList = '<p class="card-text">';
     for (let req in medicalRequirements) {
-      if (req === "plantarFascitis-friendly") {
+      if (req === 'plantarFascitis-friendly') {
         specialReqList += `<span class="badge badge-primary" style="margin-right: 10px;">Plantar Fascitis Friendly</span>`;
       }
-      if (req === "bunion-friendly") {
+      if (req === 'bunion-friendly') {
         specialReqList += `<span class="badge badge-success" style="margin-right: 10px;">Bunion Friendly</span>`;
       }
-      if (req === "highInstep-friendly") {
+      if (req === 'highInstep-friendly') {
         specialReqList += `<span class="badge badge-info" style="margin-right: 10px;">Bone Spur Friendly</span>`;
       }
     }
 
     if (washType) {
-      specialReqList += `<span class="badge badge-danger">${washType}</span>`;
+      specialReqList += `<span class="badge badge-danger" style="margin-right: 10px;">${washType}</span>`;
+    }
+    if (size.toLowerCase() !== 'neither') {
+      specialReqList += `<span class="badge badge-warning" style="margin-right: 10px;">${size}</span>`;
+    }
+    if (fit.toLowerCase() !== 'neither') {
+      specialReqList += `<span class="badge badge-dark" style="margin-right: 10px;">${fit}</span>`;
     }
 
-    specialReqList += "</p>";
-    let sizeInfo = "";
-    if (fit.toLowerCase() !== "neither") {
-      sizeInfo += `This shoe has a ${fit.toLowerCase()} fit. `;
-    }
-    if (size.toLowerCase() !== "neither") {
-      sizeInfo += `If you are a half size, make sure to ${size.toLowerCase()}.`;
-    }
+    specialReqList += '</p>';
     if (lowerCaseName === name.toLowerCase()) {
       individualShoePage.innerHTML += `
       <div class="card mb-3" style="max-width: 65%;">
@@ -722,9 +749,8 @@ const loadShoePage = async (searchedName) => {
           <h3 class="card-title">${name}</h5>
           <h5 class="card-title">$${price}</h5>
           <p class="card-text">
-            The ${name} is a ${type}. It supports the following colors choices:
+            Current color options:
             ${colorList}
-            ${sizeInfo}
           </p>
           ${specialReqList}
         </div>

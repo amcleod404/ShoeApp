@@ -69,6 +69,25 @@
   grid-template-columns: auto auto auto;
 }
 
+/* Search Bar Code */
+#search-bar {
+  margin-top: 50px;
+  width: 595px;
+  border: 0.5px solid lightgrey;
+}
+
+#search-divider {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: row;
+}
+
+#search-divider button {
+  border-color: lightgrey;
+  background-color: var(--green);
+}
+
 /** Wrapper Code **/
 .wrapper {
   display: flex;
@@ -127,7 +146,7 @@
 
 .description p {
   font-size: 10px;
-  padding-top: 90px;
+  padding-top: 60px;
 }
 
 #box1 {

@@ -16,24 +16,7 @@
       "red-linen": "Yes",
       "navy-linen": "Yes",
       "gold-woven": "Yes",
-      "silver-woven": "Yes"
-    },
-    "type": "Sandal",
-    "washType": "Machine Washable",
-    "size": "Size Down",
-    "fit": "Wide",
-    "archType": "Low Arch",
-    "medicalRequirements": {
-      "plantarFascitis-friendly": "Yes",
-      "bunion-friendly": "Yes"
-    },
-    "image": "./images/atlantic.jpg"
-  },
-  "Sandal-2": {
-    "id": "2",
-    "name": "Atlantic Stripe",
-    "price": "120",
-    "color": {
+      "silver-woven": "Yes",
       "chabray-stripe": "Yes",
       "black-bi-stripe": "Yes",
       "navy-bi-stripe": "Yes",
@@ -51,7 +34,7 @@
       "plantarFascitis-friendly": "Yes",
       "bunion-friendly": "Yes"
     },
-    "image": "./images/atlantic-stripe-sandal.jpg"
+    "image": "./images/atlantic.jpg"
   },
 
   "Sandal-3": {
@@ -173,22 +156,6 @@
       "highInstep-friendly": "Yes"
     },
     "image": "./images/easton.jpg"
-  },
-  "Sandal-12": {
-    "id": "12",
-    "name": "Forsyth",
-    "price": "90",
-    "color": {
-      "black": "Yes",
-      "linen": "Yes"
-    },
-    "type": "Sandal",
-    "washType": "Machine Washable",
-    "size": "Size Down",
-    "fit": "Wide",
-    "archType": "Low Arch",
-    "medicalRequirements": {},
-    "image": "./images/forsyth.jpg"
   },
 
   "Sandal-13": {
@@ -582,7 +549,7 @@
     "image": "./images/cooper.jpg"
   },
 
-  "Wedge-9": {
+  "Sandal-9": {
     "id": "9",
     "name": "Sully",
     "price": "100",
@@ -591,7 +558,7 @@
       "tobacco": "Yes",
       "pink-multi-stripe": "Yes"
     },
-    "type": "Wedge",
+    "type": "Sandal",
     "washType": "Machine Washable",
     "size": "Size Up",
     "fit": "Narrow",
@@ -698,24 +665,7 @@
       "pearl-woven": "Yes",
       "denim": "Yes",
       "red": "Yes",
-      "coral": "Yes"
-    },
-    "type": "Wedge",
-    "washType": "Machine Washable",
-    "size": "Size up",
-    "fit": "Wide",
-    "archType": "Low Arch",
-    "medicalRequirements": {
-      "bunion-friendly": "Yes"
-    },
-    "image": "./images/med.jpg"
-  },
-
-  "Wedge-16": {
-    "id": "16",
-    "name": "MED-Stripe",
-    "price": "150",
-    "color": {
+      "coral": "Yes",
       "chambray-stripe": "Yes",
       "olive-tan": "Yes",
       "navy-bi-stripe": "Yes",
@@ -732,7 +682,7 @@
     "medicalRequirements": {
       "bunion-friendly": "Yes"
     },
-    "image": "./images/med-stripe.jpg"
+    "image": "./images/med.jpg"
   },
 
   "Wedge-17": {
@@ -755,45 +705,13 @@
 
   "Wedge-18": {
     "id": "18",
-    "name": "Carolina Braid",
+    "name": "Carolina",
     "price": "135",
     "color": {
-      "gray-braid": "Yes"
-    },
-    "type": "Wedge",
-    "washType": "Hand Washable",
-    "size": "Size Down",
-    "fit": "Neither",
-    "archType": "Neither",
-    "medicalRequirements": {
-      "bunion-friendly": "Yes"
-    },
-    "image": "./images/carolina-braid.jpg"
-  },
-  "Wedge-19": {
-    "id": "19",
-    "name": "Carolina Linen",
-    "price": "135",
-    "color": {
+      "gray-braid": "Yes",
       "navy-linen": "Yes",
       "linen": "Yes",
-      "black-linen": "Yes"
-    },
-    "type": "Wedge",
-    "washType": "Machine Washable",
-    "size": "Size Down",
-    "fit": "Neither",
-    "archType": "Neither",
-    "medicalRequirements": {
-      "bunion-friendly": "Yes"
-    },
-    "image": "./images/carolina-linen.jpg"
-  },
-  "Wedge-20": {
-    "id": "20",
-    "name": "Carolina Satin",
-    "price": "135",
-    "color": {
+      "black-linen": "Yes",
       "flamingo": "Yes"
     },
     "type": "Wedge",
@@ -804,7 +722,7 @@
     "medicalRequirements": {
       "bunion-friendly": "Yes"
     },
-    "image": "./images/carolina-satin.jpg"
+    "image": "./images/carolina-braid.jpg"
   },
 
   "Boot-1": {
@@ -1077,7 +995,6 @@
     "color": {
       "tan": "Yes",
       "black": "Yes"
-      
     },
     "type": "Cocktail",
     "washType": "Hand Washable",
@@ -1117,7 +1034,7 @@
       "linen": "Yes",
       "gold": "Yes",
       "silver": "Yes",
-      "white/linen":"Yes"
+      "white/linen": "Yes"
     },
     "type": "Cocktail",
     "washType": "Machine Washable",
@@ -1125,7 +1042,7 @@
     "fit": "Wide",
     "archType": "High Arch",
     "medicalRequirements": {
-      "bunion-friendly":"Yes"
+      "bunion-friendly": "Yes"
     },
     "image": "./images/telfair-cocktail.jpg"
   },
@@ -1167,10 +1084,8 @@
       "gold": "Yes",
       "silver": "Yes",
       "tan/yellow": "Yes",
-      "pink/orange":"Yes",
-      "black/white":"Yes"
-
-
+      "pink/orange": "Yes",
+      "black/white": "Yes"
     },
     "type": "Cocktail",
     "washType": "Hand Washable",
@@ -1190,11 +1105,10 @@
     "color": {
       "black-mesh": "Yes",
       "rustic-tobacco": "Yes",
-      "black":"Yes",
+      "black": "Yes",
       "navy": "Yes",
       "gold": "Yes",
       "silver": "Yes"
-
     },
     "type": "Cocktail",
     "washType": "Hand Washable",
@@ -1231,11 +1145,11 @@
     "name": "Courtland",
     "price": "79",
     "color": {
-      "red":"Yes",
-      "white":"Yes"
+      "red": "Yes",
+      "white": "Yes"
     },
     "type": "Closed-Toe",
-    "washType":"Machine Washable",
+    "washType": "Machine Washable",
     "size": "Neither",
     "fit": "Neither",
     "archType": "Neither",
@@ -1248,12 +1162,12 @@
     "name": "Cru",
     "price": "135",
     "color": {
-      "black":"Yes",
-      "linen":"Yes",
-      "red/white/blue":"Yes"
+      "black": "Yes",
+      "linen": "Yes",
+      "red/white/blue": "Yes"
     },
-    "type": "Closed-Toe",
-    "washType":"Machine Washable",
+    "type": "Sandal Closed-Toe",
+    "washType": "Machine Washable",
     "size": "Size down",
     "fit": "Neither",
     "archType": "Neither",
@@ -1266,9 +1180,9 @@
     "name": "Lemon",
     "price": "135",
     "color": {
-      "army-green":"Yes",
-      "tan":"Yes",
-      "gray":"Yes"
+      "army-green": "Yes",
+      "tan": "Yes",
+      "gray": "Yes"
     },
     "type": "Closed-Toe",
     "size": "Size Up",
@@ -1283,14 +1197,14 @@
     "name": "Cape",
     "price": "135",
     "color": {
-      "denim-stripe":"Yes",
-      "leopard":"Yes",
-      "black-herringbone":"Yes",
-      "tan-herringbone":"Yes",
-      "black-multi-stripe":"Yes"
+      "denim-stripe": "Yes",
+      "leopard": "Yes",
+      "black-herringbone": "Yes",
+      "tan-herringbone": "Yes",
+      "black-multi-stripe": "Yes"
     },
     "type": "Closed-Toe",
-    "washType":"Machine Washable",
+    "washType": "Machine Washable",
     "size": "Size Down",
     "fit": "Neither",
     "archType": "Neither",
@@ -1303,13 +1217,13 @@
     "name": "Chewie",
     "price": "135",
     "color": {
-      "olive/navy":"Yes",
-      "blush/gray":"Yes",
-      "gray/gray":"Yes",
-      "navy/navy":"Yes"
+      "olive/navy": "Yes",
+      "blush/gray": "Yes",
+      "gray/gray": "Yes",
+      "navy/navy": "Yes"
     },
     "type": "Closed-Toe",
-    "washType":"Hand Washable",
+    "washType": "Hand Washable",
     "size": "Size Up",
     "fit": "Wide",
     "archType": "Neither",
@@ -1322,18 +1236,17 @@
     "name": "Blakely",
     "price": "135",
     "color": {
-      "gray/white-pinstripe":"Yes",
-      "black/white-pinstripe":"Yes",
+      "gray/white-pinstripe": "Yes",
+      "black/white-pinstripe": "Yes",
       "camo-gold-ruffle": "Yes",
-      "leopard":"Yes",
-      "black":"Yes",
-      "coral-multi-stripe":"Yes",
+      "leopard": "Yes",
+      "black": "Yes",
+      "coral-multi-stripe": "Yes",
       "black/gray-pinstripe": "Yes",
       "red/white-pinstripe": "Yes"
-
     },
-    "type": "Closed-Toe",
-    "washType":"Machine Washable",
+    "type": "Closed-Toe Sandal",
+    "washType": "Machine Washable",
     "size": "Size Up",
     "fit": "Narrow",
     "archType": "Neither",
@@ -1346,15 +1259,14 @@
     "name": "Gigi",
     "price": "95",
     "color": {
-      "coral":"Yes",
+      "coral": "Yes",
       "black": "Yes",
-      "silver":"Yes",
-      "gold":"Yes",
+      "silver": "Yes",
+      "gold": "Yes",
       "tan": "Yes"
-
     },
     "type": "Closed-Toe",
-    "washType":"Machine Washable",
+    "washType": "Machine Washable",
     "size": "Size up",
     "fit": "Narrow",
     "archType": "Neither",
@@ -1367,11 +1279,11 @@
     "name": "Upper Monterey Shoe",
     "price": "135",
     "color": {
-      "black-herringbone":"Yes",
-      "tan-herringbone":"Yes"
+      "black-herringbone": "Yes",
+      "tan-herringbone": "Yes"
     },
     "type": "Closed-Toe",
-    "washType":"Machine Washable",
+    "washType": "Machine Washable",
     "size": "Size up",
     "fit": "Neither",
     "archType": "Neither",
@@ -1384,15 +1296,14 @@
     "name": "Marina",
     "price": "135",
     "color": {
-      "black":"Yes",
-      "navy":"Yes",
-      "gray-pinstripe":"Yes",
+      "black": "Yes",
+      "navy": "Yes",
+      "gray-pinstripe": "Yes",
       "navy-multi-stripe": "Yes",
-      "pink-multi-stripe":"Yes"
-
+      "pink-multi-stripe": "Yes"
     },
     "type": "Closed-Toe",
-    "washType":"Hand Washable",
+    "washType": "Hand Washable",
     "size": "Size up",
     "fit": "Narrow",
     "archType": "Neither",
@@ -1405,15 +1316,14 @@
     "name": "Lulu",
     "price": "69",
     "color": {
-      "red":"Yes",
-      "gray":"Yes",
-      "black":"Yes",
-      "navy":"Yes",
-      "pink":"Yes"
-
+      "red": "Yes",
+      "gray": "Yes",
+      "black": "Yes",
+      "navy": "Yes",
+      "pink": "Yes"
     },
     "type": "Closed-Toe",
-    "washType":"Machine Washable",
+    "washType": "Machine Washable",
     "size": "Size up",
     "fit": "Narrow",
     "archType": "Neither",
@@ -1426,17 +1336,16 @@
     "name": "Athena",
     "price": "99",
     "color": {
-      "navy-pinstripe":"Yes",
-      "navy":"Yes",
-      "black-bi-stripe":"Yes",
-      "black-multi-stripe":"Yes",
+      "navy-pinstripe": "Yes",
+      "navy": "Yes",
+      "black-bi-stripe": "Yes",
+      "black-multi-stripe": "Yes",
       "fuchsia-multi-stripe": "Yes",
       "gray-stripe": "Yes",
       "garnate": "Yes"
-
     },
     "type": "Closed-Toe",
-    "washType":"Machine Washable",
+    "washType": "Machine Washable",
     "size": "Size up",
     "fit": "Narrow",
     "archType": "Neither",

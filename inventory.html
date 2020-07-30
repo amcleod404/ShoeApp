@@ -85,25 +85,41 @@
         <div class="colorGrid">
           <div class="form-check">
             <div class="colorOption">
-              <input type="checkbox" class="form-check-input" id="black" />
+              <input
+                type="checkbox"
+                class="form-check-input color-choice-selector"
+                id="black"
+              />
               <label class="form-check-label" for="exampleCheck1">Black</label>
             </div>
           </div>
           <div class="form-check">
             <div class="colorOption">
-              <input type="checkbox" class="form-check-input" id="white" />
+              <input
+                type="checkbox"
+                class="form-check-input color-choice-selector"
+                id="white"
+              />
               <label class="form-check-label" for="exampleCheck1">White</label>
             </div>
           </div>
           <div class="form-check">
             <div class="colorOption">
-              <input type="checkbox" class="form-check-input" id="coral" />
+              <input
+                type="checkbox"
+                class="form-check-input color-choice-selector"
+                id="coral"
+              />
               <label class="form-check-label" for="exampleCheck1">Coral</label>
             </div>
           </div>
           <div class="form-check">
             <div class="colorOption">
-              <input type="checkbox" class="form-check-input" id="tobacco" />
+              <input
+                type="checkbox"
+                class="form-check-input color-choice-selector"
+                id="tobacco"
+              />
               <label class="form-check-label" for="exampleCheck1"
                 >Tobacco</label
               >
@@ -111,19 +127,31 @@
           </div>
           <div class="form-check">
             <div class="colorOption">
-              <input type="checkbox" class="form-check-input" id="red" />
+              <input
+                type="checkbox"
+                class="form-check-input color-choice-selector"
+                id="red"
+              />
               <label class="form-check-label" for="exampleCheck1">Red</label>
             </div>
           </div>
           <div class="form-check">
             <div class="colorOption">
-              <input type="checkbox" class="form-check-input" id="navy" />
+              <input
+                type="checkbox"
+                class="form-check-input color-choice-selector"
+                id="navy"
+              />
               <label class="form-check-label" for="exampleCheck1">Navy</label>
             </div>
           </div>
           <div class="form-check">
             <div class="colorOption">
-              <input type="checkbox" class="form-check-input" id="denim" />
+              <input
+                type="checkbox"
+                class="form-check-input color-choice-selector"
+                id="denim"
+              />
               <label class="form-check-label" for="exampleCheck1">Denim</label>
             </div>
           </div>
@@ -131,7 +159,7 @@
             <div class="colorOption">
               <input
                 type="checkbox"
-                class="form-check-input"
+                class="form-check-input color-choice-selector"
                 id="black-linen"
               />
               <label class="form-check-label" for="exampleCheck1"
@@ -141,13 +169,21 @@
           </div>
           <div class="form-check">
             <div class="colorOption">
-              <input type="checkbox" class="form-check-input" id="linen" />
+              <input
+                type="checkbox"
+                class="form-check-input color-choice-selector"
+                id="linen"
+              />
               <label class="form-check-label" for="exampleCheck1">Linen</label>
             </div>
           </div>
           <div class="form-check">
             <div class="colorOption">
-              <input type="checkbox" class="form-check-input" id="red-linen" />
+              <input
+                type="checkbox"
+                class="form-check-input color-choice-selector"
+                id="red-linen"
+              />
               <label class="form-check-label" for="exampleCheck1"
                 >Red Linen</label
               >
@@ -155,7 +191,11 @@
           </div>
           <div class="form-check">
             <div class="colorOption">
-              <input type="checkbox" class="form-check-input" id="navy-linen" />
+              <input
+                type="checkbox"
+                class="form-check-input color-choice-selector"
+                id="navy-linen"
+              />
               <label class="form-check-label" for="exampleCheck1"
                 >Navy Linen</label
               >
@@ -163,7 +203,11 @@
           </div>
           <div class="form-check">
             <div class="colorOption">
-              <input type="checkbox" class="form-check-input" id="gold-woven" />
+              <input
+                type="checkbox"
+                class="form-check-input color-choice-selector"
+                id="gold-woven"
+              />
               <label class="form-check-label" for="exampleCheck1"
                 >Gold Woven</label
               >
@@ -173,7 +217,7 @@
             <div class="colorOption">
               <input
                 type="checkbox"
-                class="form-check-input"
+                class="form-check-input color-choice-selector"
                 id="silver-woven"
               />
               <label class="form-check-label" for="exampleCheck1"
@@ -182,6 +226,26 @@
             </div>
           </div>
         </div>
+        <label for="basic-url">Add New Color</label>
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="newcolorname"
+            placeholder="Add a new color"
+            aria-label="Add a new color"
+            aria-describedby="basic-addon2"
+          />
+          <div class="input-group-append">
+            <span
+              class="input-group-text"
+              id="addnewcolor"
+              style="cursor: pointer;"
+              >+</span
+            >
+          </div>
+        </div>
+        <br />
 
         <!-- MACHINE WASH -->
 
@@ -192,24 +256,40 @@
         <div class="form-check">
           <div class="machineWash">
             <input
-              type="checkbox"
+              type="radio"
+              name="johndoe"
               class="form-check-input"
-              id="machine-wash-yes"
+              id="machine-wash"
             />
-            <label class="form-check-label" for="exampleCheck1">Yes</label>
+            <label class="form-check-label" for="exampleCheck1"
+              >Machine Wash</label
+            >
           </div>
         </div>
 
         <div class="form-check">
           <div class="machineWash">
             <input
-              type="checkbox"
+              type="radio"
+              name="johndoe"
               class="form-check-input"
-              id="machine-wash-no"
+              id="hand-wash"
             />
-            <label class="form-check-label" for="exampleCheck1" id="no-label"
-              >No</label
+            <label class="form-check-label" for="exampleCheck1"
+              >Hand Wash</label
             >
+          </div>
+        </div>
+
+        <div class="form-check">
+          <div class="machineWash">
+            <input
+              type="radio"
+              name="johndoe"
+              class="form-check-input"
+              id="neither-nor-wash"
+            />
+            <label class="form-check-label" for="exampleCheck1">Neither</label>
           </div>
         </div>
 
@@ -220,7 +300,12 @@
         </div>
         <div class="form-check">
           <div class="size">
-            <input type="checkbox" class="form-check-input" id="size-up" />
+            <input
+              type="radio"
+              name="bradtraversy"
+              class="form-check-input"
+              id="size-up"
+            />
             <label class="form-check-label" for="exampleCheck1" id="size-up"
               >Size-Up</label
             >
@@ -229,7 +314,12 @@
 
         <div class="form-check">
           <div class="size">
-            <input type="checkbox" class="form-check-input" id="size-down" />
+            <input
+              type="radio"
+              name="bradtraversy"
+              class="form-check-input"
+              id="size-down"
+            />
             <label class="form-check-label" for="exampleCheck1" id="size-down"
               >Size-Down</label
             >
@@ -238,7 +328,12 @@
 
         <div class="form-check">
           <div class="size">
-            <input type="checkbox" class="form-check-input" id="size-neither" />
+            <input
+              type="radio"
+              name="bradtraversy"
+              class="form-check-input"
+              id="size-neither"
+            />
             <label class="form-check-label" for="exampleCheck1" id="no-label"
               >Neither</label
             >
@@ -253,7 +348,12 @@
 
         <div class="form-check">
           <div class="size">
-            <input type="checkbox" class="form-check-input" id="wide" />
+            <input
+              type="radio"
+              name="hughjass"
+              class="form-check-input"
+              id="wide"
+            />
             <label class="form-check-label" for="exampleCheck1" id="wide"
               >Wide</label
             >
@@ -262,7 +362,12 @@
 
         <div class="form-check">
           <div class="size">
-            <input type="checkbox" class="form-check-input" id="narrow" />
+            <input
+              type="radio"
+              name="hughjass"
+              class="form-check-input"
+              id="narrow"
+            />
             <label class="form-check-label" for="exampleCheck1" id="narrow"
               >Narrow</label
             >
@@ -271,7 +376,12 @@
 
         <div class="form-check">
           <div class="size">
-            <input type="checkbox" class="form-check-input" id="fit-neither" />
+            <input
+              type="radio"
+              name="hughjass"
+              class="form-check-input"
+              id="fit-neither"
+            />
             <label class="form-check-label" for="exampleCheck1" id="no-label"
               >Neither</label
             >
@@ -286,8 +396,13 @@
 
         <div class="form-check">
           <div class="size">
-            <input type="checkbox" class="form-check-input" id="high-arch" />
-            <label class="form-check-label" for="exampleCheck1" id="high-arch"
+            <input
+              type="radio"
+              name="applewood"
+              class="form-check-input"
+              id="high-arch"
+            />
+            <label class="form-check-label" for="exampleCheck1"
               >High Arch</label
             >
           </div>
@@ -295,107 +410,89 @@
 
         <div class="form-check">
           <div class="size">
-            <input type="checkbox" class="form-check-input" id="low-arch" />
-            <label class="form-check-label" for="exampleCheck1" id="low-arch"
-              >Low Arch</label
-            >
+            <input
+              type="radio"
+              name="applewood"
+              class="form-check-input"
+              id="low-arch"
+            />
+            <label class="form-check-label" for="exampleCheck1">Low Arch</label>
           </div>
         </div>
 
         <div class="form-check">
           <div class="size">
-            <input type="checkbox" class="form-check-input" id="arch-neither" />
+            <input
+              type="radio"
+              name="applewood"
+              class="form-check-input"
+              id="arch-neither"
+            />
             <label class="form-check-label" for="exampleCheck1" id="no-label"
               >Neither</label
             >
           </div>
         </div>
 
-        <!-- BONE SPUR -->
+        <!-- PLANTAR BOY -->
 
         <div class="form-group" id="check-label">
-          <label for="machine-wash">Bone Spur</label>
+          <label for="size">Medical Requirements</label>
         </div>
 
         <div class="form-check">
-          <div class="machineWash">
+          <div class="size">
             <input
               type="checkbox"
+              name="johnapplewood"
               class="form-check-input"
-              id="bone-spur-yes"
+              id="plantar"
             />
-            <label class="form-check-label" for="exampleCheck1">Yes</label>
-          </div>
-        </div>
-
-        <div class="form-check">
-          <div class="machineWash">
-            <input type="checkbox" class="form-check-input" id="bone-spur-no" />
-            <label class="form-check-label" for="exampleCheck1" id="no-label"
-              >No</label
+            <label class="form-check-label" for="exampleCheck1"
+              >Plantar Fascitis</label
             >
           </div>
         </div>
 
-        <!-- PLANTAR FASCITIS -->
-
-        <div class="form-group" id="check-label">
-          <label for="machine-wash">Plantar Fascitis</label>
-        </div>
-
         <div class="form-check">
-          <div class="machineWash">
-            <input type="checkbox" class="form-check-input" id="plantar-yes" />
-            <label class="form-check-label" for="exampleCheck1">Yes</label>
-          </div>
-        </div>
-
-        <div class="form-check">
-          <div class="machineWash">
-            <input type="checkbox" class="form-check-input" id="plantar-no" />
-            <label class="form-check-label" for="exampleCheck1" id="no-label"
-              >No</label
+          <div class="size">
+            <input
+              type="checkbox"
+              name="johnapplewood"
+              class="form-check-input"
+              id="bonespurs"
+            />
+            <label class="form-check-label" for="exampleCheck1"
+              >Bone Spurs</label
             >
           </div>
         </div>
 
-        <!-- BUNION -->
-
-        <div class="form-group" id="check-label">
-          <label for="machine-wash">Bunion</label>
-        </div>
-
         <div class="form-check">
-          <div class="machineWash">
-            <input type="checkbox" class="form-check-input" id="bunion-yes" />
-            <label class="form-check-label" for="exampleCheck1">Yes</label>
-          </div>
-        </div>
-
-        <div class="form-check">
-          <div class="machineWash">
-            <input type="checkbox" class="form-check-input" id="bunion-no" />
+          <div class="size">
+            <input
+              type="checkbox"
+              name="johnapplewood"
+              class="form-check-input"
+              id="bunions"
+            />
             <label class="form-check-label" for="exampleCheck1" id="no-label"
-              >No</label
+              >Bunions</label
             >
           </div>
         </div>
 
         <!-- IMAGE -->
 
-        <div class="form-group" id="check-label">
-          <label for="image">Image</label>
-        </div>
-
-        <div class="form-check" style="margin-bottom: 75px;">
-          <div class="image">
-            <input
-              name="image"
-              type="file"
-              class="form-check-input"
-              id="image-link"
-            />
-          </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Link to Image</label>
+          <input
+            type="name"
+            class="form-control"
+            id="image-link"
+            aria-describedby="emailHelp"
+            placeholder="Link to image"
+          />
         </div>
 
         <button
@@ -409,7 +506,7 @@
       </form>
     </div>
 
-    <div class="container">
+    <!-- <div class="container">
       <p>Delete from Inventory</p>
     </div>
 
@@ -430,7 +527,7 @@
           Submit
         </button>
       </form>
-    </div>
+    </div> -->
 
     <div class="footer">
       <div id="footerimg">
